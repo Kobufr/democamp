@@ -49,3 +49,7 @@ dialog{max-height:84dvh;padding:0;overflow:hidden}#modalContent{padding:34px;max
 /* The visible marker stays small; its touch/hover target covers the miniature. */
 #mapPins:not(.clustered) .pin{width:108px!important;min-width:108px!important;max-width:108px!important;height:108px!important;min-height:108px!important;transform:translate(-50%,-50%)!important;z-index:1}#mapPins .pin:before{left:calc(50% - 3.5px);bottom:calc(50% + 10px)}#mapPins .pin .pinName{bottom:calc(50% + 27px)}#mapPins .pin.hovered{z-index:12}#mapPins .pin.hovered .pinName{display:block!important}#mapPins .pin.hovered:before{background:#b68b52;transform:scale(1.35)}#mapPins .pin:hover:not(.hovered):not(.selected):not(:focus-visible) .pinName{display:none!important}#mapPins .pin.hovered:after{display:block!important;content:'';width:64px;height:40px;left:50%;top:50%;bottom:auto;transform:translate(-50%,-50%);border:1px solid #b6976166;background:#f7f4df14;border-radius:50%;pointer-events:none}
 @media(max-width:600px){#mapPins:not(.clustered) .pin{width:92px!important;min-width:92px!important;max-width:92px!important;height:92px!important;min-height:92px!important}}
+
+/* The HUD inherits pointer-events:none from main; editable journal fields need their own hit surface. */
+#gameUI .journal{pointer-events:auto;z-index:8}
+#gameUI .journal input,#gameUI .journal select{pointer-events:auto;min-height:34px;cursor:pointer}

@@ -914,5 +914,1308 @@
       "林間"
     ],
     "color": 9678208
+  },
+  {
+    "id": "q-morapp",
+    "name": "モラップキャンプ場",
+    "short": "モラップ",
+    "pref": "北海道",
+    "region": "北海道・千歳市",
+    "en": "SHIKOTSU",
+    "land": "highlake",
+    "desc": "湖を眺めながら、静かな水辺の時間を楽しもう。",
+    "tags": [
+      "休暇村",
+      "自然",
+      "そとあそび"
+    ],
+    "color": 10073472,
+    "url": "https://www.qkamura.or.jp/sp/ypro/hotel_select.asp?ty=camp",
+    "geo": [
+      141.41,
+      42.74
+    ],
+    "attributes": [
+      "ファミリー",
+      "湖・池"
+    ]
+  },
+  {
+    "id": "q-amihari",
+    "name": "網張温泉キャンプ場",
+    "short": "網張温泉",
+    "pref": "岩手",
+    "region": "岩手・雫石町",
+    "en": "IWATE",
+    "land": "mountain",
+    "desc": "山の空気に包まれて、ゆっくり深呼吸。",
+    "tags": [
+      "休暇村",
+      "自然",
+      "そとあそび"
+    ],
+    "color": 10073472,
+    "url": "https://www.qkamura.or.jp/sp/ypro/hotel_select.asp?ty=camp",
+    "geo": [
+      140.94,
+      39.85
+    ],
+    "attributes": [
+      "ファミリー",
+      "山"
+    ]
+  },
+  {
+    "id": "q-miyako",
+    "name": "宮古姉ヶ崎オートキャンプ場",
+    "short": "宮古姉ヶ崎",
+    "pref": "岩手",
+    "region": "岩手・宮古市",
+    "en": "MIYAKO",
+    "land": "sea",
+    "desc": "海のそばで潮風を感じる、のんびりしたそと時間。",
+    "tags": [
+      "休暇村",
+      "自然",
+      "そとあそび"
+    ],
+    "color": 10073472,
+    "url": "https://www.qkamura.or.jp/sp/ypro/hotel_select.asp?ty=camp",
+    "geo": [
+      141.98,
+      39.7
+    ],
+    "attributes": [
+      "ファミリー",
+      "海"
+    ]
+  },
+  {
+    "id": "q-nyuto",
+    "name": "乳頭キャンプ場",
+    "short": "乳頭",
+    "pref": "秋田",
+    "region": "秋田・仙北市",
+    "en": "NYUTO",
+    "land": "forest",
+    "desc": "木々に囲まれて、木もれびと森の音を楽しもう。",
+    "tags": [
+      "休暇村",
+      "自然",
+      "そとあそび"
+    ],
+    "color": 10073472,
+    "url": "https://www.qkamura.or.jp/sp/ypro/hotel_select.asp?ty=camp",
+    "geo": [
+      140.79,
+      39.8
+    ],
+    "attributes": [
+      "ファミリー",
+      "林間",
+      "山"
+    ]
+  },
+  {
+    "id": "q-oshima",
+    "name": "気仙沼大島キャンプ場",
+    "short": "気仙沼大島",
+    "pref": "宮城",
+    "region": "宮城・気仙沼市",
+    "en": "KESENNUMA",
+    "land": "sea",
+    "desc": "海のそばで潮風を感じる、のんびりしたそと時間。",
+    "tags": [
+      "休暇村",
+      "自然",
+      "そとあそび"
+    ],
+    "color": 10073472,
+    "url": "https://www.qkamura.or.jp/sp/ypro/hotel_select.asp?ty=camp",
+    "geo": [
+      141.62,
+      38.84
+    ],
+    "attributes": [
+      "ファミリー",
+      "海"
+    ]
+  },
+  {
+    "id": "q-haguro",
+    "name": "羽黒山キャンプ場",
+    "short": "羽黒山",
+    "pref": "山形",
+    "region": "山形・鶴岡市",
+    "en": "HAGURO",
+    "land": "forest",
+    "desc": "木々に囲まれて、木もれびと森の音を楽しもう。",
+    "tags": [
+      "休暇村",
+      "自然",
+      "そとあそび"
+    ],
+    "color": 10073472,
+    "url": "https://www.qkamura.or.jp/sp/ypro/hotel_select.asp?ty=camp",
+    "geo": [
+      139.98,
+      38.7
+    ],
+    "attributes": [
+      "ファミリー",
+      "林間",
+      "山"
+    ]
+  },
+  {
+    "id": "q-urabandai",
+    "name": "裏磐梯キャンプ場",
+    "short": "裏磐梯",
+    "pref": "福島",
+    "region": "福島・北塩原村",
+    "en": "BANDAI",
+    "land": "highland",
+    "desc": "高原の広い空と緑の中で、自由なキャンプ時間。",
+    "tags": [
+      "休暇村",
+      "自然",
+      "そとあそび"
+    ],
+    "color": 10073472,
+    "url": "https://www.qkamura.or.jp/sp/ypro/hotel_select.asp?ty=camp",
+    "geo": [
+      140.06,
+      37.7
+    ],
+    "attributes": [
+      "ファミリー",
+      "山",
+      "草原"
+    ]
+  },
+  {
+    "id": "q-kazawa",
+    "name": "嬬恋鹿沢キャンプ場",
+    "short": "嬬恋鹿沢",
+    "pref": "群馬",
+    "region": "群馬・嬬恋村",
+    "en": "KAZAWA",
+    "land": "forest",
+    "desc": "木々に囲まれて、木もれびと森の音を楽しもう。",
+    "tags": [
+      "休暇村",
+      "自然",
+      "そとあそび"
+    ],
+    "color": 10073472,
+    "url": "https://www.qkamura.or.jp/sp/ypro/hotel_select.asp?ty=camp",
+    "geo": [
+      138.42,
+      36.47
+    ],
+    "attributes": [
+      "ファミリー",
+      "林間",
+      "山"
+    ]
+  },
+  {
+    "id": "q-irago",
+    "name": "伊良湖オートキャンプ場",
+    "short": "伊良湖",
+    "pref": "愛知",
+    "region": "愛知・田原市",
+    "en": "IRAGO",
+    "land": "meadow",
+    "desc": "ひらけた緑の中で、のびのび過ごそう。",
+    "tags": [
+      "休暇村",
+      "自然",
+      "そとあそび"
+    ],
+    "color": 10073472,
+    "url": "https://www.qkamura.or.jp/sp/ypro/hotel_select.asp?ty=camp",
+    "geo": [
+      137.05,
+      34.63
+    ],
+    "attributes": [
+      "ファミリー",
+      "草原"
+    ]
+  },
+  {
+    "id": "q-chausu",
+    "name": "チャウシカノ森キャンプ場",
+    "short": "チャウシカノ森",
+    "pref": "愛知",
+    "region": "愛知・豊根村",
+    "en": "CHAUSU",
+    "land": "forest",
+    "desc": "木々に囲まれて、木もれびと森の音を楽しもう。",
+    "tags": [
+      "休暇村",
+      "自然",
+      "そとあそび"
+    ],
+    "color": 10073472,
+    "url": "https://www.qkamura.or.jp/sp/ypro/hotel_select.asp?ty=camp",
+    "geo": [
+      137.66,
+      35.22
+    ],
+    "attributes": [
+      "ファミリー",
+      "林間",
+      "山"
+    ]
+  },
+  {
+    "id": "q-chirihama",
+    "name": "能登千里浜シーサイドオートキャンプ場",
+    "short": "能登千里浜シーサイド",
+    "pref": "石川",
+    "region": "石川・羽咋市",
+    "en": "NOTO",
+    "land": "sea",
+    "desc": "海のそばで潮風を感じる、のんびりしたそと時間。",
+    "tags": [
+      "休暇村",
+      "自然",
+      "そとあそび"
+    ],
+    "color": 10073472,
+    "url": "https://www.qkamura.or.jp/sp/ypro/hotel_select.asp?ty=camp",
+    "geo": [
+      136.76,
+      36.9
+    ],
+    "attributes": [
+      "ファミリー",
+      "海"
+    ]
+  },
+  {
+    "id": "q-mikuni",
+    "name": "越前三国オートキャンプ場",
+    "short": "越前三国",
+    "pref": "福井",
+    "region": "福井・坂井市",
+    "en": "ECHIZEN",
+    "land": "sea",
+    "desc": "海のそばで潮風を感じる、のんびりしたそと時間。",
+    "tags": [
+      "休暇村",
+      "自然",
+      "そとあそび"
+    ],
+    "color": 10073472,
+    "url": "https://www.qkamura.or.jp/sp/ypro/hotel_select.asp?ty=camp",
+    "geo": [
+      136.14,
+      36.25
+    ],
+    "attributes": [
+      "ファミリー",
+      "海"
+    ]
+  },
+  {
+    "id": "q-omi",
+    "name": "近江八幡キャンプ場",
+    "short": "近江八幡",
+    "pref": "滋賀",
+    "region": "滋賀・近江八幡市",
+    "en": "OHMI",
+    "land": "highlake",
+    "desc": "湖を眺めながら、静かな水辺の時間を楽しもう。",
+    "tags": [
+      "休暇村",
+      "自然",
+      "そとあそび"
+    ],
+    "color": 10073472,
+    "url": "https://www.qkamura.or.jp/sp/ypro/hotel_select.asp?ty=camp",
+    "geo": [
+      136.06,
+      35.18
+    ],
+    "attributes": [
+      "ファミリー",
+      "湖・池"
+    ]
+  },
+  {
+    "id": "q-awaji",
+    "name": "南淡路シーサイドキャンプ場",
+    "short": "南淡路シーサイド",
+    "pref": "兵庫",
+    "region": "兵庫・南あわじ市",
+    "en": "AWAJI",
+    "land": "sea",
+    "desc": "海のそばで潮風を感じる、のんびりしたそと時間。",
+    "tags": [
+      "休暇村",
+      "自然",
+      "そとあそび"
+    ],
+    "color": 10073472,
+    "url": "https://www.qkamura.or.jp/sp/ypro/hotel_select.asp?ty=camp",
+    "geo": [
+      134.73,
+      34.24
+    ],
+    "attributes": [
+      "ファミリー",
+      "海"
+    ]
+  },
+  {
+    "id": "q-takeno",
+    "name": "休暇村竹野海岸キャンプ場",
+    "short": "休暇村竹野海岸",
+    "pref": "兵庫",
+    "region": "兵庫・豊岡市",
+    "en": "TAKENO",
+    "land": "sea",
+    "desc": "海のそばで潮風を感じる、のんびりしたそと時間。",
+    "tags": [
+      "休暇村",
+      "自然",
+      "そとあそび"
+    ],
+    "color": 10073472,
+    "url": "https://www.qkamura.or.jp/sp/ypro/hotel_select.asp?ty=camp",
+    "geo": [
+      134.76,
+      35.66
+    ],
+    "attributes": [
+      "ファミリー",
+      "海"
+    ]
+  },
+  {
+    "id": "q-kada",
+    "name": "紀州加太オートキャンプ場",
+    "short": "紀州加太",
+    "pref": "和歌山",
+    "region": "和歌山・和歌山市",
+    "en": "KADA",
+    "land": "sea",
+    "desc": "海のそばで潮風を感じる、のんびりしたそと時間。",
+    "tags": [
+      "休暇村",
+      "自然",
+      "そとあそび"
+    ],
+    "color": 10073472,
+    "url": "https://www.qkamura.or.jp/sp/ypro/hotel_select.asp?ty=camp",
+    "geo": [
+      135.07,
+      34.29
+    ],
+    "attributes": [
+      "ファミリー",
+      "海"
+    ]
+  },
+  {
+    "id": "q-kagamiganaru",
+    "name": "鏡ヶ成キャンプ場",
+    "short": "鏡ヶ成",
+    "pref": "鳥取",
+    "region": "鳥取・江府町",
+    "en": "DAISEN",
+    "land": "highland",
+    "desc": "高原の広い空と緑の中で、自由なキャンプ時間。",
+    "tags": [
+      "休暇村",
+      "自然",
+      "そとあそび"
+    ],
+    "color": 10073472,
+    "url": "https://www.qkamura.or.jp/sp/ypro/hotel_select.asp?ty=camp",
+    "geo": [
+      133.59,
+      35.29
+    ],
+    "attributes": [
+      "ファミリー",
+      "山",
+      "草原"
+    ]
+  },
+  {
+    "id": "q-hiruzen",
+    "name": "蒜山高原キャンプ場",
+    "short": "蒜山高原",
+    "pref": "岡山",
+    "region": "岡山・真庭市",
+    "en": "HIRUZEN",
+    "land": "highland",
+    "desc": "高原の広い空と緑の中で、自由なキャンプ時間。",
+    "tags": [
+      "休暇村",
+      "自然",
+      "そとあそび"
+    ],
+    "color": 10073472,
+    "url": "https://www.qkamura.or.jp/sp/ypro/hotel_select.asp?ty=camp",
+    "geo": [
+      133.64,
+      35.3
+    ],
+    "attributes": [
+      "ファミリー",
+      "山",
+      "草原"
+    ]
+  },
+  {
+    "id": "q-okunoshima",
+    "name": "大久野島キャンプ場",
+    "short": "大久野島",
+    "pref": "広島",
+    "region": "広島・竹原市",
+    "en": "OHKUNO",
+    "land": "sea",
+    "desc": "海のそばで潮風を感じる、のんびりしたそと時間。",
+    "tags": [
+      "休暇村",
+      "自然",
+      "そとあそび"
+    ],
+    "color": 10073472,
+    "url": "https://www.qkamura.or.jp/sp/ypro/hotel_select.asp?ty=camp",
+    "geo": [
+      132.99,
+      34.3
+    ],
+    "attributes": [
+      "ファミリー",
+      "海"
+    ]
+  },
+  {
+    "id": "q-taishaku",
+    "name": "くぬぎの森キャンプ場",
+    "short": "くぬぎの森",
+    "pref": "広島",
+    "region": "広島・庄原市",
+    "en": "TAISHAKU",
+    "land": "forest",
+    "desc": "木々に囲まれて、木もれびと森の音を楽しもう。",
+    "tags": [
+      "休暇村",
+      "自然",
+      "そとあそび"
+    ],
+    "color": 10073472,
+    "url": "https://www.qkamura.or.jp/sp/ypro/hotel_select.asp?ty=camp",
+    "geo": [
+      133.24,
+      34.83
+    ],
+    "attributes": [
+      "ファミリー",
+      "林間",
+      "山"
+    ]
+  },
+  {
+    "id": "q-goshiki",
+    "name": "讃岐五色台キャンプ場",
+    "short": "讃岐五色台",
+    "pref": "香川",
+    "region": "香川・坂出市",
+    "en": "GOSHIKI",
+    "land": "mountain",
+    "desc": "山の空気に包まれて、ゆっくり深呼吸。",
+    "tags": [
+      "休暇村",
+      "自然",
+      "そとあそび"
+    ],
+    "color": 10073472,
+    "url": "https://www.qkamura.or.jp/sp/ypro/hotel_select.asp?ty=camp",
+    "geo": [
+      133.94,
+      34.34
+    ],
+    "attributes": [
+      "ファミリー",
+      "山"
+    ]
+  },
+  {
+    "id": "q-toyo",
+    "name": "瀬戸内東予シーサイドキャンプ場",
+    "short": "瀬戸内東予シーサイド",
+    "pref": "愛媛",
+    "region": "愛媛・西条市",
+    "en": "TOYO",
+    "land": "sea",
+    "desc": "海のそばで潮風を感じる、のんびりしたそと時間。",
+    "tags": [
+      "休暇村",
+      "自然",
+      "そとあそび"
+    ],
+    "color": 10073472,
+    "url": "https://www.qkamura.or.jp/sp/ypro/hotel_select.asp?ty=camp",
+    "geo": [
+      133.07,
+      33.96
+    ],
+    "attributes": [
+      "ファミリー",
+      "海"
+    ]
+  },
+  {
+    "id": "q-aso",
+    "name": "南阿蘇キャンプ場",
+    "short": "南阿蘇",
+    "pref": "熊本",
+    "region": "熊本・高森町",
+    "en": "ASO",
+    "land": "highland",
+    "desc": "高原の広い空と緑の中で、自由なキャンプ時間。",
+    "tags": [
+      "休暇村",
+      "自然",
+      "そとあそび"
+    ],
+    "color": 10073472,
+    "url": "https://www.qkamura.or.jp/sp/ypro/hotel_select.asp?ty=camp",
+    "geo": [
+      131.12,
+      32.82
+    ],
+    "attributes": [
+      "ファミリー",
+      "山",
+      "草原"
+    ]
+  },
+  {
+    "id": "q-ibusuki",
+    "name": "指宿エコキャンプ場",
+    "short": "指宿エコ",
+    "pref": "鹿児島",
+    "region": "鹿児島・指宿市",
+    "en": "IBUSUKI",
+    "land": "sea",
+    "desc": "海のそばで潮風を感じる、のんびりしたそと時間。",
+    "tags": [
+      "休暇村",
+      "自然",
+      "そとあそび"
+    ],
+    "color": 10073472,
+    "url": "https://www.qkamura.or.jp/sp/ypro/hotel_select.asp?ty=camp",
+    "geo": [
+      130.67,
+      31.27
+    ],
+    "attributes": [
+      "ファミリー",
+      "海"
+    ]
+  },
+  {
+    "id": "pica-yoshida",
+    "name": "PICA富士吉田",
+    "short": "PICA富士吉田",
+    "pref": "山梨",
+    "region": "山梨・富士吉田市",
+    "en": "PICA YOSHIDA",
+    "land": "forest",
+    "desc": "富士吉田市の自然をモチーフにした小さなキャンプ旅。緑と空を感じながら、自由なそとあそびを楽しもう。",
+    "tags": [
+      "林間",
+      "山",
+      "コテージ等"
+    ],
+    "color": 10139010,
+    "url": "https://www.pica-resort.jp/navi/index.html",
+    "geo": [
+      138.78,
+      35.45
+    ],
+    "attributes": [
+      "ファミリー",
+      "林間",
+      "山",
+      "コテージ等"
+    ]
+  },
+  {
+    "id": "pica-saiko",
+    "name": "PICA富士西湖",
+    "short": "PICA富士西湖",
+    "pref": "山梨",
+    "region": "山梨・富士河口湖町",
+    "en": "PICA SAIKO",
+    "land": "lakefuji",
+    "desc": "富士河口湖町の自然をモチーフにした小さなキャンプ旅。水辺の景色を眺めながら、ゆっくり過ごそう。",
+    "tags": [
+      "湖・池",
+      "釣り",
+      "山"
+    ],
+    "color": 10139010,
+    "url": "https://www.pica-resort.jp/navi/index.html",
+    "geo": [
+      138.68,
+      35.5
+    ],
+    "attributes": [
+      "ファミリー",
+      "湖・池",
+      "釣り",
+      "山",
+      "コテージ等"
+    ]
+  },
+  {
+    "id": "pica-yamanaka",
+    "name": "PICA山中湖",
+    "short": "PICA山中湖",
+    "pref": "山梨",
+    "region": "山梨・山中湖村",
+    "en": "PICA YAMANAKA",
+    "land": "cabins",
+    "desc": "山中湖村の自然をモチーフにした小さなキャンプ旅。緑と空を感じながら、自由なそとあそびを楽しもう。",
+    "tags": [
+      "山",
+      "コテージ等"
+    ],
+    "color": 10139010,
+    "url": "https://www.pica-resort.jp/navi/index.html",
+    "geo": [
+      138.88,
+      35.41
+    ],
+    "attributes": [
+      "ファミリー",
+      "山",
+      "コテージ等"
+    ]
+  },
+  {
+    "id": "pica-fujiyama",
+    "name": "PICA Fujiyama",
+    "short": "PICA Fujiyama",
+    "pref": "山梨",
+    "region": "山梨・富士河口湖町",
+    "en": "PICA FUJIYAMA",
+    "land": "fuji",
+    "desc": "富士河口湖町の自然をモチーフにした小さなキャンプ旅。緑と空を感じながら、自由なそとあそびを楽しもう。",
+    "tags": [
+      "山",
+      "林間",
+      "コテージ等"
+    ],
+    "color": 10139010,
+    "url": "https://www.pica-resort.jp/navi/index.html",
+    "geo": [
+      138.75,
+      35.45
+    ],
+    "attributes": [
+      "ファミリー",
+      "山",
+      "林間",
+      "コテージ等"
+    ]
+  },
+  {
+    "id": "pica-akeno",
+    "name": "PICA八ヶ岳明野",
+    "short": "PICA八ヶ岳明野",
+    "pref": "山梨",
+    "region": "山梨・北杜市",
+    "en": "PICA AKENO",
+    "land": "forest",
+    "desc": "北杜市の自然をモチーフにした小さなキャンプ旅。緑と空を感じながら、自由なそとあそびを楽しもう。",
+    "tags": [
+      "山",
+      "林間",
+      "コテージ等"
+    ],
+    "color": 10139010,
+    "url": "https://www.pica-resort.jp/navi/index.html",
+    "geo": [
+      138.46,
+      35.8
+    ],
+    "attributes": [
+      "ファミリー",
+      "山",
+      "林間",
+      "コテージ等"
+    ]
+  },
+  {
+    "id": "pica-omote",
+    "name": "PICA表富士",
+    "short": "PICA表富士",
+    "pref": "静岡",
+    "region": "静岡・富士宮市",
+    "en": "PICA OMOTE",
+    "land": "forest",
+    "desc": "富士宮市の自然をモチーフにした小さなキャンプ旅。緑と空を感じながら、自由なそとあそびを楽しもう。",
+    "tags": [
+      "山",
+      "林間",
+      "コテージ等"
+    ],
+    "color": 10139010,
+    "url": "https://www.pica-resort.jp/navi/index.html",
+    "geo": [
+      138.73,
+      35.3
+    ],
+    "attributes": [
+      "ファミリー",
+      "山",
+      "林間",
+      "コテージ等"
+    ]
+  },
+  {
+    "id": "pica-hatsushima",
+    "name": "PICA初島",
+    "short": "PICA初島",
+    "pref": "静岡",
+    "region": "静岡・熱海市",
+    "en": "PICA HATSUSHIMA",
+    "land": "sea",
+    "desc": "熱海市の自然をモチーフにした小さなキャンプ旅。水辺の景色を眺めながら、ゆっくり過ごそう。",
+    "tags": [
+      "海",
+      "コテージ等"
+    ],
+    "color": 10139010,
+    "url": "https://www.pica-resort.jp/navi/index.html",
+    "geo": [
+      139.17,
+      35.04
+    ],
+    "attributes": [
+      "ファミリー",
+      "海",
+      "コテージ等"
+    ]
+  },
+  {
+    "id": "pica-jukkoku",
+    "name": "THE GLAMPING 箱根十国峠",
+    "short": "THE GLAMPING 箱根十国峠",
+    "pref": "静岡",
+    "region": "静岡・函南町",
+    "en": "PICA JUKKOKU",
+    "land": "highland",
+    "desc": "函南町の自然をモチーフにした小さなキャンプ旅。緑と空を感じながら、自由なそとあそびを楽しもう。",
+    "tags": [
+      "山",
+      "コテージ等"
+    ],
+    "color": 10139010,
+    "url": "https://www.pica-resort.jp/navi/index.html",
+    "geo": [
+      139.07,
+      35.1
+    ],
+    "attributes": [
+      "ファミリー",
+      "山",
+      "コテージ等"
+    ]
+  },
+  {
+    "id": "pica-sagami",
+    "name": "PICAさがみ湖",
+    "short": "PICAさがみ湖",
+    "pref": "神奈川",
+    "region": "神奈川・相模原市",
+    "en": "PICA SAGAMI",
+    "land": "cabins",
+    "desc": "相模原市の自然をモチーフにした小さなキャンプ旅。緑と空を感じながら、自由なそとあそびを楽しもう。",
+    "tags": [
+      "山",
+      "遊具",
+      "コテージ等"
+    ],
+    "color": 10139010,
+    "url": "https://www.pica-resort.jp/navi/index.html",
+    "geo": [
+      139.21,
+      35.6
+    ],
+    "attributes": [
+      "ファミリー",
+      "山",
+      "遊具",
+      "コテージ等"
+    ]
+  },
+  {
+    "id": "pica-chichibu",
+    "name": "PICA秩父",
+    "short": "PICA秩父",
+    "pref": "埼玉",
+    "region": "埼玉・秩父市",
+    "en": "PICA CHICHIBU",
+    "land": "cabins",
+    "desc": "秩父市の自然をモチーフにした小さなキャンプ旅。緑と空を感じながら、自由なそとあそびを楽しもう。",
+    "tags": [
+      "山",
+      "林間",
+      "コテージ等"
+    ],
+    "color": 10139010,
+    "url": "https://www.pica-resort.jp/navi/index.html",
+    "geo": [
+      139.05,
+      35.99
+    ],
+    "attributes": [
+      "ファミリー",
+      "山",
+      "林間",
+      "コテージ等"
+    ]
+  },
+  {
+    "id": "campinn-miyama",
+    "name": "キャンプinn海山",
+    "short": "キャンプinn海山",
+    "pref": "三重",
+    "region": "三重・紀北町",
+    "en": "CAMPINN MIYAMA",
+    "land": "river",
+    "desc": "紀北町の自然をモチーフにした小さなキャンプ旅。水辺の景色を眺めながら、ゆっくり過ごそう。",
+    "tags": [
+      "川",
+      "林間",
+      "オート"
+    ],
+    "color": 10139010,
+    "url": "https://camp-inn-miyama.com/",
+    "geo": [
+      136.21,
+      34.12
+    ],
+    "attributes": [
+      "ファミリー",
+      "川",
+      "林間",
+      "オート",
+      "コテージ等"
+    ]
+  },
+  {
+    "id": "water-nagatoro",
+    "name": "ウォーターパーク長瀞",
+    "short": "ウォーターパーク長瀞",
+    "pref": "埼玉",
+    "region": "埼玉・皆野町",
+    "en": "WATER NAGATORO",
+    "land": "river",
+    "desc": "皆野町の自然をモチーフにした小さなキャンプ旅。水辺の景色を眺めながら、ゆっくり過ごそう。",
+    "tags": [
+      "川",
+      "釣り",
+      "オート"
+    ],
+    "color": 10139010,
+    "url": "https://waterpark.jp/",
+    "geo": [
+      139.12,
+      36.07
+    ],
+    "attributes": [
+      "ファミリー",
+      "川",
+      "釣り",
+      "オート"
+    ]
+  },
+  {
+    "id": "shumarinai",
+    "name": "朱鞠内湖畔キャンプ場",
+    "short": "朱鞠内湖畔キャンプ場",
+    "pref": "北海道",
+    "region": "北海道・幌加内町",
+    "en": "SHUMARINAI",
+    "land": "highlake",
+    "desc": "幌加内町の自然をモチーフにした小さなキャンプ旅。水辺の景色を眺めながら、ゆっくり過ごそう。",
+    "tags": [
+      "湖・池",
+      "林間",
+      "オート"
+    ],
+    "color": 10139010,
+    "url": "https://www.shumarinai.jp/accommodation/camping/",
+    "geo": [
+      142.16,
+      44.28
+    ],
+    "attributes": [
+      "ファミリー",
+      "湖・池",
+      "林間",
+      "オート"
+    ]
+  },
+  {
+    "id": "michinoku",
+    "name": "エコキャンプみちのく",
+    "short": "エコキャンプみちのく",
+    "pref": "宮城",
+    "region": "宮城・川崎町",
+    "en": "MICHINOKU",
+    "land": "meadow",
+    "desc": "川崎町の自然をモチーフにした小さなキャンプ旅。緑と空を感じながら、自由なそとあそびを楽しもう。",
+    "tags": [
+      "草原",
+      "オート",
+      "コテージ等"
+    ],
+    "color": 10139010,
+    "url": "https://michinoku-park.info/campsite/",
+    "geo": [
+      140.64,
+      38.21
+    ],
+    "attributes": [
+      "ファミリー",
+      "草原",
+      "オート",
+      "コテージ等"
+    ]
+  },
+  {
+    "id": "tsukubane",
+    "name": "つくばねオートキャンプ場",
+    "short": "つくばねオートキャンプ場",
+    "pref": "茨城",
+    "region": "茨城・石岡市",
+    "en": "TSUKUBANE",
+    "land": "forest",
+    "desc": "石岡市の自然をモチーフにした小さなキャンプ旅。緑と空を感じながら、自由なそとあそびを楽しもう。",
+    "tags": [
+      "山",
+      "林間",
+      "オート"
+    ],
+    "color": 10139010,
+    "url": "https://www.ishioka-kankou.com/tsukubane-auto-camp/",
+    "geo": [
+      140.13,
+      36.22
+    ],
+    "attributes": [
+      "ファミリー",
+      "山",
+      "林間",
+      "オート",
+      "コテージ等"
+    ]
+  },
+  {
+    "id": "kamiogawa",
+    "name": "上小川キャンプ場",
+    "short": "上小川キャンプ場",
+    "pref": "茨城",
+    "region": "茨城・大子町",
+    "en": "KAMIOGAWA",
+    "land": "river",
+    "desc": "大子町の自然をモチーフにした小さなキャンプ旅。水辺の景色を眺めながら、ゆっくり過ごそう。",
+    "tags": [
+      "川",
+      "釣り",
+      "林間"
+    ],
+    "color": 10139010,
+    "url": "https://www.daigo-kanko.jp/spot-0035.html",
+    "geo": [
+      140.4,
+      36.72
+    ],
+    "attributes": [
+      "ファミリー",
+      "川",
+      "釣り",
+      "林間"
+    ]
+  },
+  {
+    "id": "oarai-pine",
+    "name": "大洗キャンプ場",
+    "short": "大洗キャンプ場",
+    "pref": "茨城",
+    "region": "茨城・大洗町",
+    "en": "OARAI PINE",
+    "land": "forest",
+    "desc": "大洗町の自然をモチーフにした小さなキャンプ旅。緑と空を感じながら、自由なそとあそびを楽しもう。",
+    "tags": [
+      "海",
+      "林間"
+    ],
+    "color": 10139010,
+    "url": "https://www.oarai-info.jp/spot/postid_3132/",
+    "geo": [
+      140.58,
+      36.32
+    ],
+    "attributes": [
+      "ファミリー",
+      "海",
+      "林間"
+    ]
+  },
+  {
+    "id": "hirugano",
+    "name": "ひるがの高原キャンプ場",
+    "short": "ひるがの高原キャンプ場",
+    "pref": "岐阜",
+    "region": "岐阜・郡上市",
+    "en": "HIRUGANO",
+    "land": "forest",
+    "desc": "郡上市の自然をモチーフにした小さなキャンプ旅。緑と空を感じながら、自由なそとあそびを楽しもう。",
+    "tags": [
+      "川",
+      "山",
+      "林間"
+    ],
+    "color": 10139010,
+    "url": "https://www.hirugano-camp.com/",
+    "geo": [
+      136.9,
+      36.0
+    ],
+    "attributes": [
+      "ファミリー",
+      "川",
+      "山",
+      "林間",
+      "コテージ等"
+    ]
+  },
+  {
+    "id": "makino",
+    "name": "マキノ高原キャンプ場",
+    "short": "マキノ高原キャンプ場",
+    "pref": "滋賀",
+    "region": "滋賀・高島市",
+    "en": "MAKINO",
+    "land": "highland",
+    "desc": "高島市の自然をモチーフにした小さなキャンプ旅。緑と空を感じながら、自由なそとあそびを楽しもう。",
+    "tags": [
+      "川",
+      "山",
+      "草原"
+    ],
+    "color": 10139010,
+    "url": "https://www.biwako-visitors.jp/spot/detail/1058/",
+    "geo": [
+      136.04,
+      35.49
+    ],
+    "attributes": [
+      "ファミリー",
+      "川",
+      "山",
+      "草原"
+    ]
+  },
+  {
+    "id": "aogawa",
+    "name": "青川峡キャンピングパーク",
+    "short": "青川峡キャンピングパーク",
+    "pref": "三重",
+    "region": "三重・いなべ市",
+    "en": "AOGAWA",
+    "land": "river",
+    "desc": "いなべ市の自然をモチーフにした小さなキャンプ旅。水辺の景色を眺めながら、ゆっくり過ごそう。",
+    "tags": [
+      "川",
+      "山",
+      "オート"
+    ],
+    "color": 10139010,
+    "url": "https://www.aogawa.jp/",
+    "geo": [
+      136.48,
+      35.13
+    ],
+    "attributes": [
+      "ファミリー",
+      "川",
+      "山",
+      "オート"
+    ]
+  },
+  {
+    "id": "hananoko",
+    "name": "椛の湖オートキャンプ場",
+    "short": "椛の湖オートキャンプ場",
+    "pref": "岐阜",
+    "region": "岐阜・中津川市",
+    "en": "HANANOKO",
+    "land": "highlake",
+    "desc": "中津川市の自然をモチーフにした小さなキャンプ旅。水辺の景色を眺めながら、ゆっくり過ごそう。",
+    "tags": [
+      "湖・池",
+      "山",
+      "オート"
+    ],
+    "color": 10139010,
+    "url": "https://hananoko-camp.jp/",
+    "geo": [
+      137.51,
+      35.64
+    ],
+    "attributes": [
+      "ファミリー",
+      "湖・池",
+      "山",
+      "オート",
+      "コテージ等"
+    ]
+  },
+  {
+    "id": "hoshifuru",
+    "name": "鋸南ほしふるキャンプ場",
+    "short": "鋸南ほしふるキャンプ場",
+    "pref": "千葉",
+    "region": "千葉・鋸南町",
+    "en": "HOSHIFURU",
+    "land": "mountain",
+    "desc": "鋸南町の自然をモチーフにした小さなキャンプ旅。緑と空を感じながら、自由なそとあそびを楽しもう。",
+    "tags": [
+      "山"
+    ],
+    "color": 10139010,
+    "url": "https://kyonanhoshifuru-camp.jp/camp/",
+    "geo": [
+      139.87,
+      35.12
+    ],
+    "attributes": [
+      "ファミリー",
+      "山"
+    ]
+  },
+  {
+    "id": "bifue",
+    "name": "美笛キャンプ場",
+    "short": "美笛キャンプ場",
+    "pref": "北海道",
+    "region": "北海道・千歳市",
+    "en": "BIFUE",
+    "land": "highlake",
+    "desc": "千歳市の自然をモチーフにした小さなキャンプ旅。水辺の景色を眺めながら、ゆっくり過ごそう。",
+    "tags": [
+      "湖・池",
+      "林間"
+    ],
+    "color": 10139010,
+    "url": "https://www.shikotuko.jp/ja/",
+    "geo": [
+      141.26,
+      42.73
+    ],
+    "attributes": [
+      "ファミリー",
+      "湖・池",
+      "林間"
+    ]
+  },
+  {
+    "id": "hikawa",
+    "name": "氷川キャンプ場",
+    "short": "氷川キャンプ場",
+    "pref": "東京",
+    "region": "東京・奥多摩町",
+    "en": "HIKAWA",
+    "land": "river",
+    "desc": "奥多摩町の自然をモチーフにした小さなキャンプ旅。水辺の景色を眺めながら、ゆっくり過ごそう。",
+    "tags": [
+      "川",
+      "山",
+      "釣り"
+    ],
+    "color": 10139010,
+    "url": "https://www.ohtama.or.jp/sightseeing/323.html",
+    "geo": [
+      139.1,
+      35.81
+    ],
+    "attributes": [
+      "ファミリー",
+      "川",
+      "山",
+      "釣り"
+    ]
+  },
+  {
+    "id": "kenny",
+    "name": "ケニーズ・ファミリー・ビレッジ",
+    "short": "ケニーズ・ファミリー・ビレッジ",
+    "pref": "埼玉",
+    "region": "埼玉・飯能市",
+    "en": "KENNY",
+    "land": "river",
+    "desc": "飯能市の自然をモチーフにした小さなキャンプ旅。水辺の景色を眺めながら、ゆっくり過ごそう。",
+    "tags": [
+      "川",
+      "山",
+      "オート"
+    ],
+    "color": 10139010,
+    "url": "https://www.kfv.co.jp/",
+    "geo": [
+      139.18,
+      35.87
+    ],
+    "attributes": [
+      "ファミリー",
+      "川",
+      "山",
+      "オート"
+    ]
+  },
+  {
+    "id": "hirayu",
+    "name": "平湯キャンプ場",
+    "short": "平湯キャンプ場",
+    "pref": "岐阜",
+    "region": "岐阜・高山市",
+    "en": "HIRAYU",
+    "land": "forest",
+    "desc": "高山市の自然をモチーフにした小さなキャンプ旅。緑と空を感じながら、自由なそとあそびを楽しもう。",
+    "tags": [
+      "山",
+      "林間",
+      "オート"
+    ],
+    "color": 10139010,
+    "url": "https://www.hirayu-camp.com/",
+    "geo": [
+      137.55,
+      36.18
+    ],
+    "attributes": [
+      "ファミリー",
+      "山",
+      "林間",
+      "オート",
+      "コテージ等"
+    ]
   }
 ]
