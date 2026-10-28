@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {todayInJapan,isValidVisitDate,visitDateOf,sortVisits,recordedVisits,activitySummary,matchesCamp,createPastVisit,replaySnapshot,distanceForZoom,zoomForDistance,CAMP_ATTRIBUTES} from '../dist/camp-history.js';
+import {todayInJapan,isValidVisitDate,visitDateOf,sortVisits,recordedVisits,activitySummary,matchesCamp,createPastVisit,replaySnapshot,distanceForZoom,zoomForDistance,CAMP_ATTRIBUTES} from '../public/camp/camp-history.js';
 const now=new Date('2026-10-28T10:00:00Z');
 test('dates use Japan time, accept leap days, and reject invalid or future dates',()=>{
  assert.equal(todayInJapan(new Date('2026-10-27T16:00:00Z')),'2026-10-28');

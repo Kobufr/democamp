@@ -1,0 +1,918 @@
+[
+  {
+    "id": "fumoto",
+    "name": "ふもとっぱらキャンプ場",
+    "short": "ふもとっぱら",
+    "pref": "静岡",
+    "region": "静岡県・富士宮市",
+    "en": "FUMOTOPPARA",
+    "land": "fuji",
+    "desc": "富士山を望む広い草原。大きな空の下で、のびのびキャンプ。",
+    "tags": [
+      "富士山",
+      "草原",
+      "開放感"
+    ],
+    "color": 9614967,
+    "url": "https://fumotoppara.net/guide/",
+    "geo": [
+      138.61,
+      35.41
+    ],
+    "attributes": [
+      "ファミリー",
+      "山",
+      "オート",
+      "草原"
+    ]
+  },
+  {
+    "id": "cabins",
+    "name": "CAMP & CABINS 山中湖",
+    "short": "C&C 山中湖",
+    "pref": "山梨",
+    "region": "山梨県・山中湖村",
+    "en": "YAMANAKAKO",
+    "land": "cabins",
+    "desc": "木のキャビンと遊び場がある家族の隠れ家。木々の中で、わくわくする一日を。",
+    "tags": [
+      "キャビン",
+      "家族",
+      "遊び場"
+    ],
+    "color": 8823925,
+    "url": "https://www.camp-cabins.com/yamanakako/facility/",
+    "geo": [
+      138.86,
+      35.43
+    ],
+    "attributes": [
+      "ファミリー",
+      "山",
+      "オート",
+      "遊具",
+      "林間",
+      "コテージ等"
+    ]
+  },
+  {
+    "id": "verga",
+    "name": "べるが 尾白の森キャンプ場",
+    "short": "べるが",
+    "pref": "山梨",
+    "region": "山梨県・北杜市白州",
+    "en": "HAKUSHU / VERGA",
+    "land": "river",
+    "desc": "木もれびが揺れる白州の森。水のせせらぎに耳をすませて、ゆっくり深呼吸。",
+    "tags": [
+      "森",
+      "名水",
+      "木もれび"
+    ],
+    "color": 6787703,
+    "url": "https://www.verga.info/stay",
+    "geo": [
+      138.3,
+      35.8
+    ],
+    "attributes": [
+      "ファミリー",
+      "川",
+      "山",
+      "オート",
+      "林間",
+      "コテージ等"
+    ]
+  },
+  {
+    "id": "mochiya",
+    "name": "朝霧高原もちやキャンプ場",
+    "short": "朝霧高原もちや",
+    "pref": "静岡",
+    "region": "静岡県・富士宮市",
+    "en": "ASAGIRI / MOCHIYA",
+    "land": "play",
+    "desc": "富士山のふもと、緑いっぱいの高原。遊具と星空を楽しもう。",
+    "tags": [
+      "高原",
+      "遊具",
+      "星空"
+    ],
+    "color": 10664058,
+    "url": "https://www.mochiya.co.jp/camp.html",
+    "geo": [
+      138.57,
+      35.36
+    ],
+    "attributes": [
+      "ファミリー",
+      "山",
+      "遊具",
+      "草原"
+    ]
+  },
+  {
+    "id": "genshi",
+    "name": "原始村キャンプ場",
+    "short": "原始村",
+    "pref": "山梨",
+    "region": "山梨県・小菅村",
+    "en": "KOSUGE / GENSHIMURA",
+    "land": "genshi",
+    "desc": "源流の村で、むかしの住まいに出会う。三角の茅葺き屋根と清流に囲まれた、小さな冒険。",
+    "tags": [
+      "源流",
+      "茅葺き屋根",
+      "森"
+    ],
+    "color": 8297585,
+    "url": "https://www.genshi-mura.com/campsite",
+    "geo": [
+      138.96,
+      35.75
+    ],
+    "attributes": [
+      "ファミリー",
+      "川",
+      "山",
+      "林間",
+      "コテージ等"
+    ]
+  },
+  {
+    "id": "tanuki",
+    "name": "田貫湖キャンプ場",
+    "short": "田貫湖",
+    "pref": "静岡",
+    "region": "静岡県・富士宮市",
+    "en": "LAKE TANUKI",
+    "land": "lakefuji",
+    "desc": "富士山のふもとの湖畔で、ゆっくり深呼吸。水面と芝生の景色を楽しもう。",
+    "tags": [
+      "湖畔",
+      "富士山",
+      "芝生"
+    ],
+    "color": 9547132,
+    "url": "https://tanukiko.com/",
+    "geo": [
+      138.56,
+      35.34
+    ],
+    "attributes": [
+      "ファミリー",
+      "山",
+      "釣り",
+      "湖・池",
+      "草原"
+    ]
+  },
+  {
+    "id": "ryuyo",
+    "name": "竜洋海洋公園オートキャンプ場",
+    "short": "竜洋海洋公園",
+    "pref": "静岡",
+    "region": "静岡県・磐田市",
+    "en": "RYUYO SEASIDE",
+    "land": "sea",
+    "desc": "遠州灘に近い海洋公園のキャンプ場。海風をイメージした、開放的な緑のフィールドへ。",
+    "tags": [
+      "海風",
+      "公園",
+      "芝生"
+    ],
+    "color": 11058310,
+    "url": "https://www.ryu-yo.co.jp/yoyaku/auto/facilities.html",
+    "geo": [
+      137.88,
+      34.66
+    ],
+    "attributes": [
+      "ファミリー",
+      "海",
+      "オート",
+      "遊具",
+      "草原",
+      "コテージ等"
+    ]
+  },
+  {
+    "id": "yume",
+    "name": "成田ゆめ牧場オートキャンプ場",
+    "short": "成田ゆめ牧場",
+    "pref": "千葉",
+    "region": "千葉県・成田市",
+    "en": "NARITA YUME BOKUJO",
+    "land": "farm",
+    "desc": "牧場のとなりで、のんびりキャンプ。草原と牧歌的な風景の中で、ひと休み。",
+    "tags": [
+      "牧場",
+      "草原",
+      "家族"
+    ],
+    "color": 11058556,
+    "url": "https://www.yumebokujo.com/camp.html",
+    "geo": [
+      140.38,
+      35.87
+    ],
+    "attributes": [
+      "ファミリー",
+      "オート",
+      "草原"
+    ]
+  },
+  {
+    "id": "morimaki",
+    "name": "森のまきばオートキャンプ場",
+    "short": "森のまきば",
+    "pref": "千葉",
+    "region": "千葉県・袖ケ浦市",
+    "en": "MORI NO MAKIBA",
+    "land": "meadow",
+    "desc": "ゆるやかに広がる緑の草原。高い空とそよ風に包まれて、時間を忘れるキャンプを。",
+    "tags": [
+      "草原",
+      "牧歌的",
+      "そよ風"
+    ],
+    "color": 10401654,
+    "url": "https://www.morimaki-camp.com/",
+    "geo": [
+      140.03,
+      35.4
+    ],
+    "attributes": [
+      "ファミリー",
+      "オート",
+      "草原"
+    ]
+  },
+  {
+    "id": "sweet",
+    "name": "北軽井沢スウィートグラス",
+    "short": "スウィートグラス",
+    "pref": "群馬",
+    "region": "群馬県・長野原町",
+    "en": "KITAKARUIZAWA",
+    "land": "forest",
+    "desc": "浅間山のふもとの森へ。木のぬくもりと薪火が似合う、ゆったりした場所。",
+    "tags": [
+      "森",
+      "浅間山",
+      "薪火"
+    ],
+    "color": 8100722,
+    "url": "https://sweetgrass.jp/",
+    "geo": [
+      138.6,
+      36.47
+    ],
+    "attributes": [
+      "ファミリー",
+      "川",
+      "山",
+      "オート",
+      "遊具",
+      "林間",
+      "コテージ等"
+    ]
+  },
+  {
+    "id": "tsumagoi",
+    "name": "無印良品カンパーニャ嬬恋キャンプ場",
+    "short": "カンパーニャ嬬恋",
+    "pref": "群馬",
+    "region": "群馬県・嬬恋村",
+    "en": "CAMPAGNA TSUMAGOI",
+    "land": "highlake",
+    "desc": "バラギ湖を見晴らす高原の丘。山々に囲まれて、湖を渡る風を感じよう。",
+    "tags": [
+      "高原",
+      "湖畔",
+      "山々"
+    ],
+    "color": 9678208,
+    "url": "https://camp.muji.com/tsumagoi/about/",
+    "geo": [
+      138.45,
+      36.57
+    ],
+    "attributes": [
+      "ファミリー",
+      "山",
+      "オート",
+      "釣り",
+      "湖・池",
+      "草原",
+      "コテージ等"
+    ]
+  },
+  {
+    "id": "daigo",
+    "name": "大子広域公園オートキャンプ場 グリンヴィラ",
+    "short": "グリンヴィラ",
+    "pref": "茨城",
+    "region": "茨城県・大子町",
+    "en": "DAIGO GREEN VILA",
+    "land": "meadow",
+    "desc": "奥久慈の緑に包まれた公園のキャンプ場。芝生の上で、のんびりそとあそび。",
+    "tags": [
+      "奥久慈",
+      "公園",
+      "芝生"
+    ],
+    "color": 9743998,
+    "url": "https://www.greenvila.jp/index.html",
+    "geo": [
+      140.35,
+      36.77
+    ],
+    "attributes": [
+      "ファミリー",
+      "山",
+      "オート",
+      "遊具",
+      "草原",
+      "コテージ等"
+    ]
+  },
+  {
+    "id": "hinuma",
+    "name": "涸沼自然公園キャンプ場",
+    "short": "涸沼自然公園",
+    "pref": "茨城",
+    "region": "茨城県・茨城町",
+    "en": "HINUMA NATURE PARK",
+    "land": "highlake",
+    "desc": "涸沼の近くの自然公園へ。広々とした緑と、水辺をイメージした景色でひと息。",
+    "tags": [
+      "自然公園",
+      "水辺",
+      "緑"
+    ],
+    "color": 9743998,
+    "url": "https://kankou-ibamachi.com/pages/73/",
+    "geo": [
+      140.5,
+      36.28
+    ],
+    "attributes": [
+      "ファミリー",
+      "オート",
+      "湖・池",
+      "草原"
+    ]
+  },
+  {
+    "id": "nasu",
+    "name": "CAMP & CABINS 那須高原",
+    "short": "C&C 那須高原",
+    "pref": "栃木",
+    "region": "栃木県・那須町",
+    "en": "NASU CAMP & CABINS",
+    "land": "cabins",
+    "desc": "那須高原の自然の中で、家族の小さな冒険。木のキャビンや遊び場のある世界へ。",
+    "tags": [
+      "那須高原",
+      "キャビン",
+      "家族"
+    ],
+    "color": 9743998,
+    "url": "https://www.camp-cabins.com/",
+    "geo": [
+      140.03,
+      37.05
+    ],
+    "attributes": [
+      "ファミリー",
+      "山",
+      "オート",
+      "遊具",
+      "林間",
+      "コテージ等"
+    ]
+  },
+  {
+    "id": "maple",
+    "name": "メープル那須高原キャンプグランド",
+    "short": "メープル那須高原",
+    "pref": "栃木",
+    "region": "栃木県・那須町",
+    "en": "MAPLE NASU",
+    "land": "river",
+    "desc": "木々のざわめきと小さな川の音。那須の林間で、自分のペースで楽しもう。",
+    "tags": [
+      "林間",
+      "小川",
+      "那須高原"
+    ],
+    "color": 9743998,
+    "url": "https://www.maple-nasu.com/",
+    "geo": [
+      139.98,
+      37.06
+    ],
+    "attributes": [
+      "ファミリー",
+      "川",
+      "山",
+      "オート",
+      "釣り",
+      "遊具",
+      "湖・池",
+      "林間",
+      "コテージ等"
+    ]
+  },
+  {
+    "id": "marunuma",
+    "name": "丸沼高原オートキャンプ場",
+    "short": "丸沼高原",
+    "pref": "群馬",
+    "region": "群馬県・片品村",
+    "en": "MARUNUMA KOGEN",
+    "land": "highland",
+    "desc": "スキー場のゲレンデを使った広いフィールド。山の空気を感じる高原キャンプ。",
+    "tags": [
+      "高原",
+      "ゲレンデ",
+      "山々"
+    ],
+    "color": 9743998,
+    "url": "https://www.marunuma.jp/green/camp/",
+    "geo": [
+      139.33,
+      36.81
+    ],
+    "attributes": [
+      "ファミリー",
+      "山",
+      "オート",
+      "草原"
+    ]
+  },
+  {
+    "id": "akagi",
+    "name": "赤城山オートキャンプ場",
+    "short": "赤城山",
+    "pref": "群馬",
+    "region": "群馬県・前橋市",
+    "en": "AKAGI AUTO CAMP",
+    "land": "forest",
+    "desc": "赤城山のふもと、高い木々に囲まれて。木の遊具と森の空気を楽しむキャンプ。",
+    "tags": [
+      "林間",
+      "赤城山",
+      "遊び場"
+    ],
+    "color": 9743998,
+    "url": "https://autocamp-akagi.com/information/index.html",
+    "geo": [
+      139.19,
+      36.51
+    ],
+    "attributes": [
+      "ファミリー",
+      "山",
+      "オート",
+      "遊具",
+      "林間",
+      "コテージ等"
+    ]
+  },
+  {
+    "id": "togakushi",
+    "name": "戸隠キャンプ場",
+    "short": "戸隠",
+    "pref": "長野",
+    "region": "長野県・長野市",
+    "en": "TOGAKUSHI",
+    "land": "mountain",
+    "desc": "戸隠山を望む高原のフィールド。白樺の木々と草原に囲まれた、のどかな時間。",
+    "tags": [
+      "戸隠山",
+      "白樺",
+      "高原"
+    ],
+    "color": 9743998,
+    "url": "https://www.togakusi.com/camp/site/",
+    "geo": [
+      138.08,
+      36.76
+    ],
+    "attributes": [
+      "ファミリー",
+      "川",
+      "山",
+      "オート",
+      "林間",
+      "草原",
+      "コテージ等"
+    ]
+  },
+  {
+    "id": "komade",
+    "name": "駒出池キャンプ場",
+    "short": "駒出池",
+    "pref": "長野",
+    "region": "長野県・佐久穂町",
+    "en": "KOMADEIKE",
+    "land": "highlake",
+    "desc": "八千穂高原の森と池をイメージした静かな世界。水面の景色を眺めながら、ゆっくり過ごそう。",
+    "tags": [
+      "池",
+      "森",
+      "八千穂高原"
+    ],
+    "color": 9743998,
+    "url": "https://yachiho-kogen.com/camp/",
+    "geo": [
+      138.35,
+      36.05
+    ],
+    "attributes": [
+      "ファミリー",
+      "川",
+      "山",
+      "オート",
+      "遊具",
+      "湖・池",
+      "林間",
+      "コテージ等"
+    ]
+  },
+  {
+    "id": "snowpeak",
+    "name": "スノーピーク HEADQUARTERS キャンプフィールド",
+    "short": "スノーピーク HQ",
+    "pref": "新潟",
+    "region": "新潟県・三条市",
+    "en": "SNOW PEAK HEADQUARTERS",
+    "land": "meadow",
+    "desc": "三条の自然に広がる起伏のあるフィールド。広い空と緑の中で、野遊びを楽しもう。",
+    "tags": [
+      "草原",
+      "丘",
+      "野遊び"
+    ],
+    "color": 9743998,
+    "url": "https://www.snowpeak.co.jp/locations/hq/",
+    "geo": [
+      139.08,
+      37.55
+    ],
+    "attributes": [
+      "ファミリー",
+      "草原"
+    ]
+  },
+  {
+    "id": "tsunan",
+    "name": "無印良品 津南キャンプ場",
+    "short": "無印良品 津南",
+    "pref": "新潟",
+    "region": "新潟県・津南町",
+    "en": "MUJI TSUNAN",
+    "land": "forest",
+    "desc": "ブナやミズナラの森に包まれて。津南の豊かな自然をイメージした、木もれびのキャンプ。",
+    "tags": [
+      "ブナの森",
+      "河岸段丘",
+      "自然"
+    ],
+    "color": 9743998,
+    "url": "https://camp.muji.com/tsunan/",
+    "geo": [
+      138.65,
+      36.97
+    ],
+    "attributes": [
+      "ファミリー",
+      "山",
+      "オート",
+      "釣り",
+      "湖・池",
+      "林間",
+      "コテージ等"
+    ]
+  },
+  {
+    "id": "kouan",
+    "name": "浩庵キャンプ場",
+    "short": "浩庵",
+    "pref": "山梨",
+    "region": "山梨県・身延町",
+    "en": "KOUAN",
+    "land": "lakefuji",
+    "geo": [
+      138.57,
+      35.47
+    ],
+    "desc": "本栖湖の水面と富士山を眺める、湖畔のキャンプ。",
+    "attributes": [
+      "山",
+      "湖・池",
+      "オート",
+      "コテージ等"
+    ],
+    "url": "https://www.kouan-motosuko.com/camp/",
+    "tags": [
+      "山",
+      "湖・池",
+      "オート"
+    ],
+    "color": 9678208
+  },
+  {
+    "id": "doshi",
+    "name": "道志の森キャンプ場",
+    "short": "道志の森",
+    "pref": "山梨",
+    "region": "山梨県・道志村",
+    "en": "DOSHI",
+    "land": "river",
+    "geo": [
+      138.99,
+      35.49
+    ],
+    "desc": "川のせせらぎと森の木もれびに包まれる、小さな休日。",
+    "attributes": [
+      "川",
+      "山",
+      "林間",
+      "オート"
+    ],
+    "url": "https://doshinomori.jp/",
+    "tags": [
+      "川",
+      "山",
+      "林間"
+    ],
+    "color": 9678208
+  },
+  {
+    "id": "hottarakashi",
+    "name": "ほったらかしキャンプ場",
+    "short": "ほったらかし",
+    "pref": "山梨",
+    "region": "山梨県・山梨市",
+    "en": "HOTTARAKASHI",
+    "land": "highland",
+    "geo": [
+      138.65,
+      35.75
+    ],
+    "desc": "丘から広がる甲府盆地と山の景色。夕暮れをゆっくり楽しもう。",
+    "attributes": [
+      "山",
+      "オート"
+    ],
+    "url": "https://hottarakashicamp.com/",
+    "tags": [
+      "山",
+      "オート"
+    ],
+    "color": 9678208
+  },
+  {
+    "id": "saiko",
+    "name": "西湖自由キャンプ場",
+    "short": "西湖自由",
+    "pref": "山梨",
+    "region": "山梨県・富士河口湖町",
+    "en": "SAIKO",
+    "land": "highlake",
+    "geo": [
+      138.68,
+      35.51
+    ],
+    "desc": "静かな西湖のほとりで、水面と空を眺めるひととき。",
+    "attributes": [
+      "山",
+      "湖・池",
+      "オート"
+    ],
+    "url": "https://saiko-jiyuu.camp/",
+    "tags": [
+      "山",
+      "湖・池",
+      "オート"
+    ],
+    "color": 9678208
+  },
+  {
+    "id": "grinpa",
+    "name": "PICA富士ぐりんぱ",
+    "short": "PICAぐりんぱ",
+    "pref": "静岡",
+    "region": "静岡県・裾野市",
+    "en": "GRINPA",
+    "land": "cabins",
+    "geo": [
+      138.77,
+      35.3
+    ],
+    "desc": "富士山のふもとの高原で、家族と過ごすそとあそび。",
+    "attributes": [
+      "ファミリー",
+      "山",
+      "オート",
+      "コテージ等"
+    ],
+    "url": "https://www.pica-resort.jp/grinpa/",
+    "tags": [
+      "ファミリー",
+      "山",
+      "オート"
+    ],
+    "color": 9678208
+  },
+  {
+    "id": "oarai",
+    "name": "大洗サンビーチキャンプ場",
+    "short": "大洗サンビーチ",
+    "pref": "茨城",
+    "region": "茨城県・大洗町",
+    "en": "OARAI",
+    "land": "sea",
+    "geo": [
+      140.57,
+      36.3
+    ],
+    "desc": "太平洋をイメージした広い空と海風。朝日を待つキャンプ。",
+    "attributes": [
+      "海",
+      "オート"
+    ],
+    "url": "https://www.oarai-info.jp/spot/postid_3133/",
+    "tags": [
+      "海",
+      "オート"
+    ],
+    "color": 9678208
+  },
+  {
+    "id": "shirosato",
+    "name": "城里町ふれあいの里",
+    "short": "ふれあいの里",
+    "pref": "茨城",
+    "region": "茨城県・城里町",
+    "en": "SHIROSATO",
+    "land": "forest",
+    "geo": [
+      140.32,
+      36.46
+    ],
+    "desc": "藤井川ダムに近い丘陵地。緑に囲まれて家族の時間を。",
+    "attributes": [
+      "ファミリー",
+      "山",
+      "林間",
+      "オート",
+      "コテージ等"
+    ],
+    "url": "https://fureai.shirosatocamp.jp/",
+    "tags": [
+      "ファミリー",
+      "山",
+      "林間"
+    ],
+    "color": 9678208
+  },
+  {
+    "id": "shimizu",
+    "name": "清水公園キャンプ場",
+    "short": "清水公園",
+    "pref": "千葉",
+    "region": "千葉県・野田市",
+    "en": "SHIMIZU",
+    "land": "forest",
+    "geo": [
+      139.85,
+      35.97
+    ],
+    "desc": "季節の木々に囲まれた公園で、身近な自然を楽しもう。",
+    "attributes": [
+      "ファミリー",
+      "林間",
+      "オート",
+      "コテージ等"
+    ],
+    "url": "https://www.shimizu-kouen.com/camp",
+    "tags": [
+      "ファミリー",
+      "林間",
+      "オート"
+    ],
+    "color": 9678208
+  },
+  {
+    "id": "arinomi",
+    "name": "有野実苑オートキャンプ場",
+    "short": "有野実苑",
+    "pref": "千葉",
+    "region": "千葉県・山武市",
+    "en": "ARINOMI",
+    "land": "forest",
+    "geo": [
+      140.35,
+      35.66
+    ],
+    "desc": "木々と農園に囲まれた、あたたかい雰囲気のキャンプ。",
+    "attributes": [
+      "ファミリー",
+      "林間",
+      "オート"
+    ],
+    "url": "https://arinomi.co.jp/autocamp02/",
+    "tags": [
+      "ファミリー",
+      "林間",
+      "オート"
+    ],
+    "color": 9678208
+  },
+  {
+    "id": "shobu",
+    "name": "菖蒲ヶ浜キャンプ村",
+    "short": "菖蒲ヶ浜",
+    "pref": "栃木",
+    "region": "栃木県・日光市",
+    "en": "SHOBU",
+    "land": "highlake",
+    "geo": [
+      139.45,
+      36.76
+    ],
+    "desc": "中禅寺湖のほとり、奥日光の山々と水辺の景色を。",
+    "attributes": [
+      "山",
+      "湖・池",
+      "釣り",
+      "林間",
+      "コテージ等"
+    ],
+    "url": "https://www.nikko-kankou.org/houjin/spot/974",
+    "tags": [
+      "山",
+      "湖・池",
+      "釣り"
+    ],
+    "color": 9678208
+  },
+  {
+    "id": "rising",
+    "name": "ライジングフィールド軽井沢",
+    "short": "RF軽井沢",
+    "pref": "長野",
+    "region": "長野県・軽井沢町",
+    "en": "RISING",
+    "land": "forest",
+    "geo": [
+      138.61,
+      36.39
+    ],
+    "desc": "軽井沢の森で、家族と自然に出会う小さな冒険。",
+    "attributes": [
+      "ファミリー",
+      "山",
+      "林間",
+      "オート"
+    ],
+    "url": "https://www.rising-field.com/rfk-camp",
+    "tags": [
+      "ファミリー",
+      "山",
+      "林間"
+    ],
+    "color": 9678208
+  },
+  {
+    "id": "myoko",
+    "name": "休暇村妙高 笹ヶ峰キャンプ場",
+    "short": "笹ヶ峰",
+    "pref": "新潟",
+    "region": "新潟県・妙高市",
+    "en": "MYOKO",
+    "land": "mountain",
+    "geo": [
+      138.08,
+      36.87
+    ],
+    "desc": "妙高の山々に囲まれた笹ヶ峰。高原の風を感じよう。",
+    "attributes": [
+      "山",
+      "草原",
+      "林間",
+      "オート"
+    ],
+    "url": "https://www.qkamura.or.jp/myoukou/camp/",
+    "tags": [
+      "山",
+      "草原",
+      "林間"
+    ],
+    "color": 9678208
+  }
+]

@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import * as THREE from '../dist/vendor/three.module.js';
-import {createMapCamera, updateMapCamera, mapPanDelta, MAP_PITCH} from '../dist/map-camera.js';
+import * as THREE from '../public/camp/vendor/three.module.js';
+import {createMapCamera, updateMapCamera, mapPanDelta, MAP_PITCH} from '../public/camp/map-camera.js';
 
 const near=(a,b)=>assert.ok(Math.abs(a-b)<1e-9, `${a} != ${b}`);
 
