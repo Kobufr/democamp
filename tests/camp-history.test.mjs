@@ -12,7 +12,7 @@ test('dates use Japan time, accept leap days, and reject invalid or future dates
 test('past registrations record only chosen activities and shelter types',()=>{
  const v=createPastVisit({id:'past',visitDate:'2025-07-12',activities:{fire:true},tentType:'cottage',now});
  assert.equal(v.closed,true);assert.equal(v.tentType,null);assert.equal(v.actions.tent,false);assert.equal(v.actions.fire,true);
- assert.deepEqual(activitySummary([v]),{tent:false,fire:true,meal:false,sleep:false});
+ assert.deepEqual(activitySummary([v]),{tent:false,fire:true,meal:false,sleep:false,car:false,tarp:false});
  assert.throws(()=>createPastVisit({id:'empty',visitDate:'2025-07-12',activities:{},now}),/1つ以上/);
  assert.throws(()=>createPastVisit({id:'future',visitDate:'2027-01-01',activities:{fire:true},now}),/訪問日/);
  const tent=createPastVisit({id:'pole',visitDate:'2025-07-12',activities:{tent:true,sleep:true},tentType:'pole',now});
@@ -23,7 +23,7 @@ test('viewing memories and editing visit dates do not add or modify visits',()=>
  const data={visits:[visit]};const before=JSON.stringify(data),snapshot=replaySnapshot(visit);
  snapshot.actions.fire=true;snapshot.visitDate='2020-01-01';
  assert.equal(JSON.stringify(data),before);assert.equal(recordedVisits(data).length,1);
- visit.visitDate='2024-07-12';assert.equal(recordedVisits(data).length,1);assert.deepEqual(activitySummary(data.visits),{tent:true,fire:false,meal:true,sleep:false});
+ visit.visitDate='2024-07-12';assert.equal(recordedVisits(data).length,1);assert.deepEqual(activitySummary(data.visits),{tent:true,fire:false,meal:true,sleep:false,car:false,tarp:false});
 });
 test('legacy and newly backdated visits stay sortable without fabricating legacy dates',()=>{
  const legacy={id:'legacy',startedAt:null,actions:{fire:true}},recent={id:'recent',startedAt:'2026-10-27T16:00:00Z',actions:{meal:true}},past={id:'past',visitDate:'2025-01-02',actions:{sleep:true}};

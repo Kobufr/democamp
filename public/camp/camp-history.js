@@ -1,5 +1,5 @@
 // Pure record and filter operations, shared by the UI and tests.
-export const ACTION_KEYS = ['tent', 'fire', 'meal', 'sleep'];
+export const ACTION_KEYS = ['tent', 'fire', 'meal', 'sleep', 'car', 'tarp'];
 export const ATTRIBUTE_LABELS = ['ファミリー', '海', '川', '山', 'オート', '釣り', '遊具', '湖・池', '林間', '草原', 'コテージ等'];
 export const CAMP_ATTRIBUTES = {
   fumoto: ['ファミリー', '山', 'オート', '草原'],
