@@ -1,0 +1,14 @@
+Prefecture boundaries
+
+Source: MLIT National Land Numerical Information, Administrative Area Data N03-2019.
+国土数値情報（行政区域データ・2019年）をもとに加工しています。
+https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03.html
+
+GeoJSON conversion and prefecture merging:
+https://github.com/piuccio/open-data-jp-prefectures-geojson
+Source blob: e93570a1f48dd252192d2625b44464144700d42a
+
+Changes for this game: simplified coordinate rings (approximately 0.007 degrees),
+removed tiny offshore islets, rounded coordinates and converted to JavaScript.
+Displayed geography is a simplified game map, not a survey or legal boundary map.
+
