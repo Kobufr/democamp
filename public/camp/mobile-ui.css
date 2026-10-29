@@ -83,3 +83,5 @@ body[data-action-choice=tent] #gameUI .campPanelHeading,body[data-action-choice=
 #mapPins.simple:not(.named) .pin:not(.selected):not(.hovered) .pinActivities{display:none!important}
 #gameUI .returnAction{grid-column:1/-1;display:flex;align-items:center;justify-content:center;gap:10px;min-height:42px;padding:6px 10px;background:#dfe8d5}#gameUI .returnAction .icon{font-size:19px;height:auto}#gameUI .returnAction small{margin:0}
 #mapPins.simple .pin.labelSuppressed:not(.selected):not(.hovered) .pinActivities{display:none!important}
+#environmentSummary{display:block;font-size:10px;color:#6f8468;margin:5px 0 2px;letter-spacing:.06em}
+@media(max-width:900px){#environmentSummary{font-size:9px;margin:3px 0 0}}
