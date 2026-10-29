@@ -6,3 +6,9 @@ export class MapGesture {
  move(id,x,y){if(!this.points.has(id))return null;const previous=[...this.points.values()];this.points.set(id,{x,y});if(this.points.size>=2){const current=[...this.points.values()],a=previous[0],b=previous[1],c=current[0],d=current[1],oldSpan=Math.hypot(a.x-b.x,a.y-b.y),span=Math.hypot(c.x-d.x,c.y-d.y),anchor={x:(a.x+b.x)/2,y:(a.y+b.y)/2};return {type:'pinch',scale:span>0&&oldSpan>0?oldSpan/span:1,anchor,dx:(c.x+d.x)/2-anchor.x,dy:(c.y+d.y)/2-anchor.y};}const dx=x-this.last.x,dy=y-this.last.y;if(Math.hypot(x-this.start.x,y-this.start.y)>5)this.moved=true;this.last={x,y};return {type:'pan',dx,dy};}
  up(id,x,y,cancelled=false){if(!this.points.has(id))return null;this.points.delete(id);if(this.points.size){this.last={...[...this.points.values()][0]};this.start={...this.last};return null;}const tap=!cancelled&&!this.moved&&!this.pinched&&Math.hypot(x-this.start.x,y-this.start.y)<=5?{type:'tap',x,y,target:this.target}:null;this.reset();return tap;}
 }
+// Empty-space double taps only; a pan, pinch or object tap resets the pair.
+export class EmptyMapTap {
+ constructor(){this.last=null;}
+ reset(){this.last=null;}
+ tap(x,y,time){const p=this.last;this.last={x,y,time};if(p&&time-p.time>=0&&time-p.time<=340&&Math.hypot(x-p.x,y-p.y)<=28){this.reset();return true;}return false;}
+}
