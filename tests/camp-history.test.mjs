@@ -40,6 +40,6 @@ test('prefecture and attribute filters combine with AND and can return no matche
  assert.equal(Object.keys(CAMP_ATTRIBUTES).length,21);
 });
 test('zoom slider spans close-up to the whole country and round trips',()=>{
- assert.equal(distanceForZoom(0),400);assert.ok(Math.abs(distanceForZoom(100)-28)<1e-9);
+ assert.equal(distanceForZoom(0),400);assert.ok(Math.abs(distanceForZoom(100)-10)<1e-9);
  for(const n of [0,10,25,50,75,100])assert.ok(Math.abs(zoomForDistance(distanceForZoom(n))-n)<1e-9);
 });

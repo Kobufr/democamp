@@ -1,3 +1,4 @@
+import {MAP_MIN_DISTANCE,MAP_MAX_DISTANCE,clampMapDistance} from './map-zoom.js';
 // Pure record and filter operations, shared by the UI and tests.
 export const ACTION_KEYS = ['tent', 'fire', 'meal', 'sleep', 'car', 'tarp'];
 export const ATTRIBUTE_LABELS = ['ファミリー', '海', '川', '山', 'オート', '釣り', '遊具', '湖・池', '林間', '草原', 'コテージ等'];
@@ -59,5 +60,5 @@ export function replaySnapshot(visit) {
   // Viewing a memory must never mutate the persisted record or its visit count.
   return JSON.parse(JSON.stringify(visit));
 }
-export function distanceForZoom(value) { return 400*Math.pow(28/400,Math.max(0,Math.min(100,Number(value)))/100); }
-export function zoomForDistance(distance) { return Math.max(0,Math.min(100,100*Math.log(Math.max(28,Math.min(400,distance))/400)/Math.log(28/400))); }
+export function distanceForZoom(value) { return MAP_MAX_DISTANCE*Math.pow(MAP_MIN_DISTANCE/MAP_MAX_DISTANCE,Math.max(0,Math.min(100,Number(value)))/100); }
+export function zoomForDistance(distance) { return Math.max(0,Math.min(100,100*Math.log(clampMapDistance(distance)/MAP_MAX_DISTANCE)/Math.log(MAP_MIN_DISTANCE/MAP_MAX_DISTANCE))); }
