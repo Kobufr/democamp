@@ -2217,5 +2217,1445 @@
       "オート",
       "コテージ等"
     ]
+  },
+  {
+    "id": "ng-madarao",
+    "name": "斑尾高原キャンピングパーク",
+    "short": "斑尾高原",
+    "pref": "長野",
+    "region": "長野・飯山市",
+    "en": "NG MADARAO",
+    "land": "mountain",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "山",
+      "林間"
+    ],
+    "color": 10796427,
+    "url": "https://www.go-nagano.net/nature-and-outdoors/id18547",
+    "geo": [
+      138.287,
+      36.852
+    ],
+    "attributes": [
+      "山",
+      "林間"
+    ]
+  },
+  {
+    "id": "ng-yasuragi",
+    "name": "やすらぎの森オートキャンプ場",
+    "short": "やすらぎの森",
+    "pref": "長野",
+    "region": "長野・信濃町",
+    "en": "NG YASURAGI",
+    "land": "mountain",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "山",
+      "林間",
+      "オート"
+    ],
+    "color": 10796427,
+    "url": "https://www.go-nagano.net/nature-and-outdoors/id18547",
+    "geo": [
+      138.173,
+      36.823
+    ],
+    "attributes": [
+      "山",
+      "林間",
+      "オート"
+    ]
+  },
+  {
+    "id": "ng-sugadaira",
+    "name": "菅平高原ファミリーオートキャンプ場",
+    "short": "菅平高原ファミリー",
+    "pref": "長野",
+    "region": "長野・上田市",
+    "en": "NG SUGADAIRA",
+    "land": "meadow",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "草原",
+      "オート"
+    ],
+    "color": 10796427,
+    "url": "https://www.go-nagano.net/nature-and-outdoors/id18547",
+    "geo": [
+      138.339,
+      36.54
+    ],
+    "attributes": [
+      "草原",
+      "オート"
+    ]
+  },
+  {
+    "id": "ng-mawarime",
+    "name": "廻り目平キャンプ場",
+    "short": "廻り目平",
+    "pref": "長野",
+    "region": "長野・川上村",
+    "en": "NG MAWARIME",
+    "land": "mountain",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "山",
+      "林間"
+    ],
+    "color": 10796427,
+    "url": "https://www.go-nagano.net/nature-and-outdoors/id18547",
+    "geo": [
+      138.644,
+      35.906
+    ],
+    "attributes": [
+      "山",
+      "林間"
+    ]
+  },
+  {
+    "id": "ng-goko",
+    "name": "五光牧場オートキャンプ場",
+    "short": "五光牧場",
+    "pref": "長野",
+    "region": "長野・川上村",
+    "en": "NG GOKO",
+    "land": "farm",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "草原",
+      "オート"
+    ],
+    "color": 10796427,
+    "url": "https://www.go-nagano.net/nature-and-outdoors/id18547",
+    "geo": [
+      138.467,
+      35.931
+    ],
+    "attributes": [
+      "草原",
+      "オート"
+    ]
+  },
+  {
+    "id": "ng-powwow",
+    "name": "木崎湖POW WOWキャンプ場",
+    "short": "木崎湖POW WOW",
+    "pref": "長野",
+    "region": "長野・大町市",
+    "en": "NG POWWOW",
+    "land": "highlake",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "湖・池",
+      "山"
+    ],
+    "color": 10796427,
+    "url": "https://www.go-nagano.net/nature-and-outdoors/id18547",
+    "geo": [
+      137.833,
+      36.555
+    ],
+    "attributes": [
+      "湖・池",
+      "山"
+    ]
+  },
+  {
+    "id": "ng-tenpyo",
+    "name": "天平の森オートキャンプ場",
+    "short": "天平の森",
+    "pref": "長野",
+    "region": "長野・安曇野市",
+    "en": "NG TENPYO",
+    "land": "mountain",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "山",
+      "林間",
+      "オート"
+    ],
+    "color": 10796427,
+    "url": "https://www.go-nagano.net/nature-and-outdoors/id18547",
+    "geo": [
+      137.937,
+      36.362
+    ],
+    "attributes": [
+      "山",
+      "林間",
+      "オート"
+    ]
+  },
+  {
+    "id": "ng-amakazari",
+    "name": "雨飾高原キャンプ場",
+    "short": "雨飾高原",
+    "pref": "長野",
+    "region": "長野・小谷村",
+    "en": "NG AMAKAZARI",
+    "land": "mountain",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "山",
+      "林間"
+    ],
+    "color": 10796427,
+    "url": "https://www.go-nagano.net/nature-and-outdoors/id18547",
+    "geo": [
+      137.976,
+      36.874
+    ],
+    "attributes": [
+      "山",
+      "林間"
+    ]
+  },
+  {
+    "id": "ng-sanjiro",
+    "name": "三城いこいの広場",
+    "short": "三城いこいの広場",
+    "pref": "長野",
+    "region": "長野・松本市",
+    "en": "NG SANJIRO",
+    "land": "mountain",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "山",
+      "林間"
+    ],
+    "color": 10796427,
+    "url": "https://www.go-nagano.net/nature-and-outdoors/id18547",
+    "geo": [
+      138.075,
+      36.219
+    ],
+    "attributes": [
+      "山",
+      "林間"
+    ]
+  },
+  {
+    "id": "ng-hytter",
+    "name": "HYTTER LODGE & CABINS",
+    "short": "HYTTER LODGE & CABINS",
+    "pref": "長野",
+    "region": "長野・茅野市",
+    "en": "NG HYTTER",
+    "land": "forest",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "林間"
+    ],
+    "color": 10796427,
+    "url": "https://www.go-nagano.net/nature-and-outdoors/id18547",
+    "geo": [
+      138.273,
+      36.043
+    ],
+    "attributes": [
+      "林間"
+    ]
+  },
+  {
+    "id": "ng-kirigamine",
+    "name": "霧ヶ峰キャンプ場",
+    "short": "霧ヶ峰",
+    "pref": "長野",
+    "region": "長野・諏訪市",
+    "en": "NG KIRIGAMINE",
+    "land": "meadow",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "草原"
+    ],
+    "color": 10796427,
+    "url": "https://www.go-nagano.net/nature-and-outdoors/id18547",
+    "geo": [
+      138.154,
+      36.103
+    ],
+    "attributes": [
+      "草原"
+    ]
+  },
+  {
+    "id": "ng-tatsuba",
+    "name": "立場川キャンプ場",
+    "short": "立場川",
+    "pref": "長野",
+    "region": "長野・富士見町",
+    "en": "NG TATSUBA",
+    "land": "river",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "川",
+      "林間"
+    ],
+    "color": 10796427,
+    "url": "https://www.go-nagano.net/nature-and-outdoors/id18547",
+    "geo": [
+      138.302,
+      35.916
+    ],
+    "attributes": [
+      "川",
+      "林間"
+    ]
+  },
+  {
+    "id": "ng-kisokodo",
+    "name": "キャンピングフィールド木曽古道",
+    "short": "キャンピングフィールド木曽古道",
+    "pref": "長野",
+    "region": "長野・木曽町",
+    "en": "NG KISOKODO",
+    "land": "forest",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "林間"
+    ],
+    "color": 10796427,
+    "url": "https://www.go-nagano.net/nature-and-outdoors/id18547",
+    "geo": [
+      137.696,
+      35.811
+    ],
+    "attributes": [
+      "林間"
+    ]
+  },
+  {
+    "id": "ng-kodama",
+    "name": "やぶはら高原こだまの森キャンプ場",
+    "short": "やぶはら高原こだまの森",
+    "pref": "長野",
+    "region": "長野・木祖村",
+    "en": "NG KODAMA",
+    "land": "mountain",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "山",
+      "林間"
+    ],
+    "color": 10796427,
+    "url": "https://www.go-nagano.net/nature-and-outdoors/id18547",
+    "geo": [
+      137.775,
+      35.967
+    ],
+    "attributes": [
+      "山",
+      "林間"
+    ]
+  },
+  {
+    "id": "ng-morikichi",
+    "name": "おんたけ森きちオートキャンプ場",
+    "short": "おんたけ森きち",
+    "pref": "長野",
+    "region": "長野・王滝村",
+    "en": "NG MORIKICHI",
+    "land": "river",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "川",
+      "林間",
+      "オート"
+    ],
+    "color": 10796427,
+    "url": "https://www.go-nagano.net/nature-and-outdoors/id18547",
+    "geo": [
+      137.478,
+      35.835
+    ],
+    "attributes": [
+      "川",
+      "林間",
+      "オート"
+    ]
+  },
+  {
+    "id": "ng-nozokido",
+    "name": "のぞきど森林公園キャンプ場",
+    "short": "のぞきど森林公園",
+    "pref": "長野",
+    "region": "長野・大桑村",
+    "en": "NG NOZOKIDO",
+    "land": "forest",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "林間"
+    ],
+    "color": 10796427,
+    "url": "https://www.go-nagano.net/nature-and-outdoors/id18547",
+    "geo": [
+      137.655,
+      35.703
+    ],
+    "attributes": [
+      "林間"
+    ]
+  },
+  {
+    "id": "ng-oguro",
+    "name": "小黒川渓谷キャンプ場",
+    "short": "小黒川渓谷",
+    "pref": "長野",
+    "region": "長野・伊那市",
+    "en": "NG OGURO",
+    "land": "river",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "川",
+      "林間"
+    ],
+    "color": 10796427,
+    "url": "https://www.go-nagano.net/nature-and-outdoors/id18547",
+    "geo": [
+      137.877,
+      35.829
+    ],
+    "attributes": [
+      "川",
+      "林間"
+    ]
+  },
+  {
+    "id": "ng-hoshi",
+    "name": "南信州広域公園星の森オートキャンプ場",
+    "short": "南信州広域公園星の森",
+    "pref": "長野",
+    "region": "長野・売木村",
+    "en": "NG HOSHI",
+    "land": "mountain",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "山",
+      "林間",
+      "オート"
+    ],
+    "color": 10796427,
+    "url": "https://www.go-nagano.net/nature-and-outdoors/id18547",
+    "geo": [
+      137.653,
+      35.281
+    ],
+    "attributes": [
+      "山",
+      "林間",
+      "オート"
+    ]
+  },
+  {
+    "id": "ng-seina",
+    "name": "せいなの森キャンプ場",
+    "short": "せいなの森",
+    "pref": "長野",
+    "region": "長野・阿智村",
+    "en": "NG SEINA",
+    "land": "forest",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "林間"
+    ],
+    "color": 10796427,
+    "url": "https://www.go-nagano.net/nature-and-outdoors/id18547",
+    "geo": [
+      137.717,
+      35.5
+    ],
+    "attributes": [
+      "林間"
+    ]
+  },
+  {
+    "id": "hk-hakodate",
+    "name": "白石公園はこだてオートキャンプ場",
+    "short": "白石公園はこだて",
+    "pref": "北海道",
+    "region": "北海道・函館市",
+    "en": "HK HAKODATE",
+    "land": "meadow",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "草原",
+      "オート"
+    ],
+    "color": 10796427,
+    "url": "https://www.auto-net.or.jp/archives/cpguide",
+    "geo": [
+      140.91,
+      41.771
+    ],
+    "attributes": [
+      "草原",
+      "オート"
+    ]
+  },
+  {
+    "id": "hk-toi",
+    "name": "函館市戸井ウォーターパークオートキャンプ場",
+    "short": "函館市戸井ウォーターパーク",
+    "pref": "北海道",
+    "region": "北海道・函館市",
+    "en": "HK TOI",
+    "land": "river",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "川",
+      "林間",
+      "オート"
+    ],
+    "color": 10796427,
+    "url": "https://www.auto-net.or.jp/archives/cpguide",
+    "geo": [
+      141.039,
+      41.758
+    ],
+    "attributes": [
+      "川",
+      "林間",
+      "オート"
+    ]
+  },
+  {
+    "id": "hk-hachamu",
+    "name": "鶉ダムオートキャンプ場ハチャムの森",
+    "short": "鶉ダムハチャムの森",
+    "pref": "北海道",
+    "region": "北海道・厚沢部町",
+    "en": "HK HACHAMU",
+    "land": "forest",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "林間",
+      "オート"
+    ],
+    "color": 10796427,
+    "url": "https://www.auto-net.or.jp/archives/cpguide",
+    "geo": [
+      140.356,
+      41.941
+    ],
+    "attributes": [
+      "林間",
+      "オート"
+    ]
+  },
+  {
+    "id": "hk-yakumo",
+    "name": "オートリゾート八雲",
+    "short": "オートリゾート八雲",
+    "pref": "北海道",
+    "region": "北海道・八雲町",
+    "en": "HK YAKUMO",
+    "land": "meadow",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "草原",
+      "オート"
+    ],
+    "color": 10796427,
+    "url": "https://www.auto-net.or.jp/archives/cpguide",
+    "geo": [
+      140.311,
+      42.232
+    ],
+    "attributes": [
+      "草原",
+      "オート"
+    ]
+  },
+  {
+    "id": "hk-pirika",
+    "name": "今金町ピリカキャンプ場",
+    "short": "今金町ピリカ",
+    "pref": "北海道",
+    "region": "北海道・今金町",
+    "en": "HK PIRIKA",
+    "land": "highlake",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "湖・池",
+      "山",
+      "オート"
+    ],
+    "color": 10796427,
+    "url": "https://www.auto-net.or.jp/archives/cpguide",
+    "geo": [
+      140.203,
+      42.499
+    ],
+    "attributes": [
+      "湖・池",
+      "山",
+      "オート"
+    ]
+  },
+  {
+    "id": "hk-takino",
+    "name": "オートリゾート滝野",
+    "short": "オートリゾート滝野",
+    "pref": "北海道",
+    "region": "北海道・札幌市",
+    "en": "HK TAKINO",
+    "land": "forest",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "林間",
+      "オート"
+    ],
+    "color": 10796427,
+    "url": "https://www.auto-net.or.jp/archives/cpguide",
+    "geo": [
+      141.384,
+      42.921
+    ],
+    "attributes": [
+      "林間",
+      "オート"
+    ]
+  },
+  {
+    "id": "hk-ichiban",
+    "name": "道民の森一番川オートキャンプ場",
+    "short": "道民の森一番川",
+    "pref": "北海道",
+    "region": "北海道・当別町",
+    "en": "HK ICHIBAN",
+    "land": "river",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "川",
+      "林間",
+      "オート"
+    ],
+    "color": 10796427,
+    "url": "https://www.auto-net.or.jp/archives/cpguide",
+    "geo": [
+      141.612,
+      43.53
+    ],
+    "attributes": [
+      "川",
+      "林間",
+      "オート"
+    ]
+  },
+  {
+    "id": "hk-maoi",
+    "name": "マオイオートランド",
+    "short": "マオイオートランド",
+    "pref": "北海道",
+    "region": "北海道・長沼町",
+    "en": "HK MAOI",
+    "land": "forest",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "林間",
+      "オート"
+    ],
+    "color": 10796427,
+    "url": "https://www.auto-net.or.jp/archives/cpguide",
+    "geo": [
+      141.751,
+      43.007
+    ],
+    "attributes": [
+      "林間",
+      "オート"
+    ]
+  },
+  {
+    "id": "hk-arten",
+    "name": "オートリゾート苫小牧アルテン",
+    "short": "オートリゾート苫小牧アルテン",
+    "pref": "北海道",
+    "region": "北海道・苫小牧市",
+    "en": "HK ARTEN",
+    "land": "forest",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "林間",
+      "オート"
+    ],
+    "color": 10796427,
+    "url": "https://www.auto-net.or.jp/archives/cpguide",
+    "geo": [
+      141.474,
+      42.607
+    ],
+    "attributes": [
+      "林間",
+      "オート"
+    ]
+  },
+  {
+    "id": "hk-greenstay",
+    "name": "グリーンステイ洞爺湖",
+    "short": "グリーンステイ洞爺湖",
+    "pref": "北海道",
+    "region": "北海道・洞爺湖町",
+    "en": "HK GREENSTAY",
+    "land": "highlake",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "湖・池",
+      "山",
+      "オート"
+    ],
+    "color": 10796427,
+    "url": "https://www.auto-net.or.jp/archives/cpguide",
+    "geo": [
+      140.822,
+      42.593
+    ],
+    "attributes": [
+      "湖・池",
+      "山",
+      "オート"
+    ]
+  },
+  {
+    "id": "hk-takara",
+    "name": "洞爺水辺の里財田キャンプ場",
+    "short": "洞爺水辺の里財田",
+    "pref": "北海道",
+    "region": "北海道・洞爺湖町",
+    "en": "HK TAKARA",
+    "land": "highlake",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "湖・池",
+      "山",
+      "オート"
+    ],
+    "color": 10796427,
+    "url": "https://www.auto-net.or.jp/archives/cpguide",
+    "geo": [
+      140.871,
+      42.647
+    ],
+    "attributes": [
+      "湖・池",
+      "山",
+      "オート"
+    ]
+  },
+  {
+    "id": "hk-marine",
+    "name": "いわないリゾートパークマリンビュー",
+    "short": "いわないリゾートパークマリンビュー",
+    "pref": "北海道",
+    "region": "北海道・岩内町",
+    "en": "HK MARINE",
+    "land": "sea",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "海",
+      "オート"
+    ],
+    "color": 10796427,
+    "url": "https://www.auto-net.or.jp/archives/cpguide",
+    "geo": [
+      140.498,
+      42.967
+    ],
+    "attributes": [
+      "海",
+      "オート"
+    ]
+  },
+  {
+    "id": "hk-hyakunin",
+    "name": "百人浜オートキャンプ場",
+    "short": "百人浜",
+    "pref": "北海道",
+    "region": "北海道・えりも町",
+    "en": "HK HYAKUNIN",
+    "land": "sea",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "海",
+      "オート"
+    ],
+    "color": 10796427,
+    "url": "https://www.auto-net.or.jp/archives/cpguide",
+    "geo": [
+      143.29,
+      41.978
+    ],
+    "attributes": [
+      "海",
+      "オート"
+    ]
+  },
+  {
+    "id": "hk-nibutani",
+    "name": "二風谷ファミリーランドオートキャンプ場",
+    "short": "二風谷ファミリーランド",
+    "pref": "北海道",
+    "region": "北海道・平取町",
+    "en": "HK NIBUTANI",
+    "land": "forest",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "林間",
+      "オート"
+    ],
+    "color": 10796427,
+    "url": "https://www.auto-net.or.jp/archives/cpguide",
+    "geo": [
+      142.148,
+      42.641
+    ],
+    "attributes": [
+      "林間",
+      "オート"
+    ]
+  },
+  {
+    "id": "hk-niseu",
+    "name": "ニセウ・エコランド",
+    "short": "ニセウ・エコランド",
+    "pref": "北海道",
+    "region": "北海道・平取町",
+    "en": "HK NISEU",
+    "land": "river",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "川",
+      "林間",
+      "オート"
+    ],
+    "color": 10796427,
+    "url": "https://www.auto-net.or.jp/archives/cpguide",
+    "geo": [
+      142.347,
+      42.874
+    ],
+    "attributes": [
+      "川",
+      "林間",
+      "オート"
+    ]
+  },
+  {
+    "id": "hk-maabu",
+    "name": "まあぶオートキャンプ場",
+    "short": "まあぶ",
+    "pref": "北海道",
+    "region": "北海道・深川市",
+    "en": "HK MAABU",
+    "land": "meadow",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "草原",
+      "オート"
+    ],
+    "color": 10796427,
+    "url": "https://www.auto-net.or.jp/archives/cpguide",
+    "geo": [
+      142.081,
+      43.687
+    ],
+    "attributes": [
+      "草原",
+      "オート"
+    ]
+  },
+  {
+    "id": "hk-takisato",
+    "name": "滝里湖オートキャンプ場",
+    "short": "滝里湖",
+    "pref": "北海道",
+    "region": "北海道・芦別市",
+    "en": "HK TAKISATO",
+    "land": "highlake",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "湖・池",
+      "山",
+      "オート"
+    ],
+    "color": 10796427,
+    "url": "https://www.auto-net.or.jp/archives/cpguide",
+    "geo": [
+      142.291,
+      43.506
+    ],
+    "attributes": [
+      "湖・池",
+      "山",
+      "オート"
+    ]
+  },
+  {
+    "id": "hk-sarugawa",
+    "name": "日高沙流川オートキャンプ場",
+    "short": "日高沙流川",
+    "pref": "北海道",
+    "region": "北海道・日高町",
+    "en": "HK SARUGAWA",
+    "land": "river",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "川",
+      "林間",
+      "オート"
+    ],
+    "color": 10796427,
+    "url": "https://www.auto-net.or.jp/archives/cpguide",
+    "geo": [
+      142.44,
+      42.873
+    ],
+    "attributes": [
+      "川",
+      "林間",
+      "オート"
+    ]
+  },
+  {
+    "id": "hk-lupic",
+    "name": "歌才オートキャンプ場ルピック",
+    "short": "歌才ルピック",
+    "pref": "北海道",
+    "region": "北海道・黒松内町",
+    "en": "HK LUPIC",
+    "land": "forest",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "林間",
+      "オート"
+    ],
+    "color": 10796427,
+    "url": "https://www.auto-net.or.jp/archives/cpguide",
+    "geo": [
+      140.315,
+      42.667
+    ],
+    "attributes": [
+      "林間",
+      "オート"
+    ]
+  },
+  {
+    "id": "hk-hinode",
+    "name": "かみふらの日の出公園オートキャンプ場",
+    "short": "かみふらの日の出公園",
+    "pref": "北海道",
+    "region": "北海道・上富良野町",
+    "en": "HK HINODE",
+    "land": "meadow",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "草原",
+      "オート"
+    ],
+    "color": 10796427,
+    "url": "https://www.auto-net.or.jp/archives/cpguide",
+    "geo": [
+      142.478,
+      43.467
+    ],
+    "attributes": [
+      "草原",
+      "オート"
+    ]
+  },
+  {
+    "id": "hk-higashi",
+    "name": "ひがしかぐら森林公園キャンプ場",
+    "short": "ひがしかぐら森林公園",
+    "pref": "北海道",
+    "region": "北海道・東神楽町",
+    "en": "HK HIGASHI",
+    "land": "forest",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "林間",
+      "オート"
+    ],
+    "color": 10796427,
+    "url": "https://www.auto-net.or.jp/archives/cpguide",
+    "geo": [
+      142.511,
+      43.681
+    ],
+    "attributes": [
+      "林間",
+      "オート"
+    ]
+  },
+  {
+    "id": "hk-aibetsu",
+    "name": "きのこの里あいべつオートキャンプ場",
+    "short": "きのこの里あいべつ",
+    "pref": "北海道",
+    "region": "北海道・愛別町",
+    "en": "HK AIBETSU",
+    "land": "river",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "川",
+      "林間",
+      "オート"
+    ],
+    "color": 10796427,
+    "url": "https://www.auto-net.or.jp/archives/cpguide",
+    "geo": [
+      142.638,
+      43.907
+    ],
+    "attributes": [
+      "川",
+      "林間",
+      "オート"
+    ]
+  },
+  {
+    "id": "hk-tentland",
+    "name": "道立オホーツク公園てんとらんど",
+    "short": "道立オホーツク公園てんとらんど",
+    "pref": "北海道",
+    "region": "北海道・網走市",
+    "en": "HK TENTLAND",
+    "land": "meadow",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "草原",
+      "オート"
+    ],
+    "color": 10796427,
+    "url": "https://www.auto-net.or.jp/archives/cpguide",
+    "geo": [
+      144.226,
+      43.976
+    ],
+    "attributes": [
+      "草原",
+      "オート"
+    ]
+  },
+  {
+    "id": "hk-nijibetsu",
+    "name": "虹別オートキャンプ場",
+    "short": "虹別",
+    "pref": "北海道",
+    "region": "北海道・標茶町",
+    "en": "HK NIJIBETSU",
+    "land": "forest",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "林間",
+      "オート"
+    ],
+    "color": 10796427,
+    "url": "https://www.auto-net.or.jp/archives/cpguide",
+    "geo": [
+      144.731,
+      43.441
+    ],
+    "attributes": [
+      "林間",
+      "オート"
+    ]
+  },
+  {
+    "id": "cb-showa",
+    "name": "昭和の森フォレストビレッジ",
+    "short": "昭和の森フォレストビレッジ",
+    "pref": "千葉",
+    "region": "千葉・千葉市",
+    "en": "CB SHOWA",
+    "land": "forest",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "林間"
+    ],
+    "color": 10796427,
+    "url": "https://www.pref.chiba.lg.jp/shousupo/sports-shisetsu/r5/11campjo.html",
+    "geo": [
+      140.278,
+      35.526
+    ],
+    "attributes": [
+      "林間"
+    ]
+  },
+  {
+    "id": "cb-shonan",
+    "name": "RECAMPしょうなん",
+    "short": "RECAMPしょうなん",
+    "pref": "千葉",
+    "region": "千葉・柏市",
+    "en": "CB SHONAN",
+    "land": "forest",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "林間"
+    ],
+    "color": 10796427,
+    "url": "https://www.pref.chiba.lg.jp/shousupo/sports-shisetsu/r5/11campjo.html",
+    "geo": [
+      140.059,
+      35.839
+    ],
+    "attributes": [
+      "林間"
+    ]
+  },
+  {
+    "id": "cb-sunset",
+    "name": "印旛沼サンセットヒルズキャンプ場",
+    "short": "印旛沼サンセットヒルズ",
+    "pref": "千葉",
+    "region": "千葉・佐倉市",
+    "en": "CB SUNSET",
+    "land": "highlake",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "湖・池",
+      "山"
+    ],
+    "color": 10796427,
+    "url": "https://www.pref.chiba.lg.jp/shousupo/sports-shisetsu/r5/11campjo.html",
+    "geo": [
+      140.209,
+      35.752
+    ],
+    "attributes": [
+      "湖・池",
+      "山"
+    ]
+  },
+  {
+    "id": "cb-sakata",
+    "name": "坂田ヶ池総合公園キャンプ場",
+    "short": "坂田ヶ池総合公園",
+    "pref": "千葉",
+    "region": "千葉・成田市",
+    "en": "CB SAKATA",
+    "land": "highlake",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "湖・池",
+      "山"
+    ],
+    "color": 10796427,
+    "url": "https://www.pref.chiba.lg.jp/shousupo/sports-shisetsu/r5/11campjo.html",
+    "geo": [
+      140.276,
+      35.818
+    ],
+    "attributes": [
+      "湖・池",
+      "山"
+    ]
+  },
+  {
+    "id": "cb-taibusa",
+    "name": "大房岬自然公園キャンプ場",
+    "short": "大房岬自然公園",
+    "pref": "千葉",
+    "region": "千葉・南房総市",
+    "en": "CB TAIBUSA",
+    "land": "sea",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "海"
+    ],
+    "color": 10796427,
+    "url": "https://www.pref.chiba.lg.jp/shousupo/sports-shisetsu/r5/11campjo.html",
+    "geo": [
+      139.822,
+      35.031
+    ],
+    "attributes": [
+      "海"
+    ]
+  },
+  {
+    "id": "cb-otaki",
+    "name": "大多喜県民の森キャンプ場",
+    "short": "大多喜県民の森",
+    "pref": "千葉",
+    "region": "千葉・大多喜町",
+    "en": "CB OTAKI",
+    "land": "forest",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "林間"
+    ],
+    "color": 10796427,
+    "url": "https://www.pref.chiba.lg.jp/shousupo/sports-shisetsu/r5/11campjo.html",
+    "geo": [
+      140.237,
+      35.284
+    ],
+    "attributes": [
+      "林間"
+    ]
+  },
+  {
+    "id": "cb-uchiura",
+    "name": "内浦山県民の森キャンプ場",
+    "short": "内浦山県民の森",
+    "pref": "千葉",
+    "region": "千葉・鴨川市",
+    "en": "CB UCHIURA",
+    "land": "forest",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "林間"
+    ],
+    "color": 10796427,
+    "url": "https://www.pref.chiba.lg.jp/shousupo/sports-shisetsu/r5/11campjo.html",
+    "geo": [
+      140.19,
+      35.153
+    ],
+    "attributes": [
+      "林間"
+    ]
+  },
+  {
+    "id": "cb-seiwa",
+    "name": "清和県民の森キャンプ場",
+    "short": "清和県民の森",
+    "pref": "千葉",
+    "region": "千葉・君津市",
+    "en": "CB SEIWA",
+    "land": "forest",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "林間"
+    ],
+    "color": 10796427,
+    "url": "https://www.pref.chiba.lg.jp/shousupo/sports-shisetsu/r5/11campjo.html",
+    "geo": [
+      140.02,
+      35.216
+    ],
+    "attributes": [
+      "林間"
+    ]
+  },
+  {
+    "id": "gm-nightview",
+    "name": "オートキャンプ場ナイトビューあかぎ",
+    "short": "ナイトビューあかぎ",
+    "pref": "群馬",
+    "region": "群馬・前橋市",
+    "en": "GM NIGHTVIEW",
+    "land": "mountain",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "山",
+      "林間",
+      "オート"
+    ],
+    "color": 10796427,
+    "url": "https://camp.gunma-kanko.jp/category/facility/",
+    "geo": [
+      139.109,
+      36.492
+    ],
+    "attributes": [
+      "山",
+      "林間",
+      "オート"
+    ]
+  },
+  {
+    "id": "gm-ozehoshi",
+    "name": "OZE-HOSHISORA GLAMPING & CAMP RESORT",
+    "short": "OZE-HOSHISORA GLAMPING & CAMP RESORT",
+    "pref": "群馬",
+    "region": "群馬・片品村",
+    "en": "GM OZEHOSHI",
+    "land": "mountain",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "山",
+      "林間"
+    ],
+    "color": 10796427,
+    "url": "https://camp.gunma-kanko.jp/category/facility/",
+    "geo": [
+      139.216,
+      36.83
+    ],
+    "attributes": [
+      "山",
+      "林間"
+    ]
+  },
+  {
+    "id": "gm-suteki",
+    "name": "ステキな村キャンプ場",
+    "short": "ステキな村",
+    "pref": "群馬",
+    "region": "群馬・東吾妻町",
+    "en": "GM SUTEKI",
+    "land": "forest",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "林間"
+    ],
+    "color": 10796427,
+    "url": "https://camp.gunma-kanko.jp/category/facility/",
+    "geo": [
+      138.795,
+      36.516
+    ],
+    "attributes": [
+      "林間"
+    ]
+  },
+  {
+    "id": "gm-blue",
+    "name": "BLUE SUMMIT AUTO CAMPING SITE",
+    "short": "BLUE SUMMIT AUTO CAMPING SITE",
+    "pref": "群馬",
+    "region": "群馬・沼田市",
+    "en": "GM BLUE",
+    "land": "mountain",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "山",
+      "林間"
+    ],
+    "color": 10796427,
+    "url": "https://camp.gunma-kanko.jp/category/facility/",
+    "geo": [
+      139.053,
+      36.593
+    ],
+    "attributes": [
+      "山",
+      "林間"
+    ]
+  },
+  {
+    "id": "gm-happu",
+    "name": "八風平キャンプ場",
+    "short": "八風平",
+    "pref": "群馬",
+    "region": "群馬・安中市",
+    "en": "GM HAPPU",
+    "land": "mountain",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "山",
+      "林間"
+    ],
+    "color": 10796427,
+    "url": "https://camp.gunma-kanko.jp/category/facility/",
+    "geo": [
+      138.643,
+      36.309
+    ],
+    "attributes": [
+      "山",
+      "林間"
+    ]
+  },
+  {
+    "id": "gm-rihei",
+    "name": "利平茶屋森林公園キャンプ場",
+    "short": "利平茶屋森林公園",
+    "pref": "群馬",
+    "region": "群馬・桐生市",
+    "en": "GM RIHEI",
+    "land": "forest",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "林間"
+    ],
+    "color": 10796427,
+    "url": "https://camp.gunma-kanko.jp/category/facility/",
+    "geo": [
+      139.217,
+      36.542
+    ],
+    "attributes": [
+      "林間"
+    ]
+  },
+  {
+    "id": "gm-hanami",
+    "name": "花見ヶ原森林公園キャンプ場",
+    "short": "花見ヶ原森林公園",
+    "pref": "群馬",
+    "region": "群馬・桐生市",
+    "en": "GM HANAMI",
+    "land": "forest",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "林間"
+    ],
+    "color": 10796427,
+    "url": "https://camp.gunma-kanko.jp/category/facility/",
+    "geo": [
+      139.209,
+      36.58
+    ],
+    "attributes": [
+      "林間"
+    ]
+  },
+  {
+    "id": "gm-chiba",
+    "name": "ちばむらオートキャンパーズリゾート",
+    "short": "ちばむらオートキャンパーズリゾート",
+    "pref": "群馬",
+    "region": "群馬・みなかみ町",
+    "en": "GM CHIBA",
+    "land": "forest",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "林間",
+      "オート"
+    ],
+    "color": 10796427,
+    "url": "https://camp.gunma-kanko.jp/category/facility/",
+    "geo": [
+      138.896,
+      36.742
+    ],
+    "attributes": [
+      "林間",
+      "オート"
+    ]
+  },
+  {
+    "id": "tc-nasunohara",
+    "name": "那須野が原公園オートキャンプ場",
+    "short": "那須野が原公園",
+    "pref": "栃木",
+    "region": "栃木・那須塩原市",
+    "en": "TC NASUNOHARA",
+    "land": "forest",
+    "desc": "周辺の自然をイメージした、小さなキャンプの舞台。お気に入りの道具を広げて、のんびり過ごそう。",
+    "tags": [
+      "林間",
+      "オート"
+    ],
+    "color": 10796427,
+    "url": "https://www.park-tochigi.com/nasunogahara/camp",
+    "geo": [
+      139.957,
+      36.913
+    ],
+    "attributes": [
+      "林間",
+      "オート"
+    ]
   }
 ]
