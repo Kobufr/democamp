@@ -1,0 +1,10 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {japanIslands} from '../public/camp/japan-geometry.js';
+import {deformedPrefectures} from '../public/camp/deformed-prefectures.js';
+import {REGIONS} from '../public/camp/regions.js';
+import {ShapeUtils,Vector2} from '../public/camp/vendor/three.module.js';
+const area=r=>Math.abs(r.reduce((n,p,i)=>{const q=r[(i+1)%r.length];return n+p[0]*q[1]-q[0]*p[1]},0)/2);
+const inside=(p,r)=>{let hit=false;for(let i=0,j=r.length-1;i<r.length;j=i++){const a=r[i],b=r[j];if((a[1]>p[1])!==(b[1]>p[1])&&p[0]<(b[0]-a[0])*(p[1]-a[1])/(b[1]-a[1])+a[0])hit=!hit;}return hit;};
+const tiles=Object.values(deformedPrefectures).flat();
+test('all prefecture display tiles partition exactly the existing deformed land, including holes',()=>{assert.deepEqual(Object.keys(deformedPrefectures).sort(),Object.values(REGIONS).flatMap(r=>r.prefectures).sort());const land=japanIslands.reduce((n,[r])=>n+area(r),0),parts=tiles.reduce((n,p)=>n+area(p.outer)-p.holes.reduce((a,r)=>a+area(r),0),0);assert.ok(Math.abs(land-parts)<1e-7);for(const p of tiles){const vectors=p.outer.map(v=>new Vector2(...v)),holes=p.holes.map(r=>r.map(v=>new Vector2(...v))),all=[...vectors,...holes.flat()],faces=ShapeUtils.triangulateShape(vectors,holes),triArea=faces.reduce((n,f)=>n+area(f.map(i=>[all[i].x,all[i].y])),0);assert.ok(Math.abs(triArea-area(p.outer)+p.holes.reduce((n,r)=>n+area(r),0))<1e-7);}});
+test('sampled colored areas never extend into water and leave no uncolored strips on land',()=>{const boxes=tiles.map(p=>({...p,box:[Math.min(...p.outer.map(v=>v[0])),Math.min(...p.outer.map(v=>v[1])),Math.max(...p.outer.map(v=>v[0])),Math.max(...p.outer.map(v=>v[1]))]}));for(let x=122.873;x<146;x+=.217)for(let y=24.113;y<45.7;y+=.239){const point=[x,y],land=japanIslands.some(([r])=>inside(point,r)),owners=boxes.filter(p=>x>=p.box[0]&&x<=p.box[2]&&y>=p.box[1]&&y<=p.box[3]&&inside(point,p.outer)&&!p.holes.some(r=>inside(point,r))).length;assert.equal(owners,land?1:0,point.join(','));}});
