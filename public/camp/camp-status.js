@@ -1,0 +1,2 @@
+import {recordedVisits} from './camp-history.js';
+export function campStatus(record={}){const visited=recordedVisits(record).length>0,wanted=!!record.wishlist;return visited&&wanted?{state:'both',label:'訪問済み・行きたい',icon:'♥✓',color:0x8c65a5,ground:0xcdbbdc}:visited?{state:'visited',label:'訪問済み',icon:'✓',color:0x328498,ground:0xafd3dc}:wanted?{state:'wanted',label:'行きたい',icon:'♥',color:0xc58a3d,ground:0xe6cfac}:{state:'new',label:'未訪問',icon:'',color:0x829279,ground:null};}
