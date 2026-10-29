@@ -1,0 +1,4 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {canDragGear,dragGearPosition} from '../public/camp/gear-drag.js';
+test('a tap selects gear; only a subsequent drag on that same gear can move it',()=>{assert.equal(canDragGear('tent',null),false);assert.equal(canDragGear('tent','car'),false);assert.equal(canDragGear(null,'tent'),false);assert.equal(canDragGear('tent','tent'),true);});
+test('finger jitter and blank taps do not move gear, while drag keeps the original grab offset',()=>{const start={x:100,y:100};assert.equal(dragGearPosition(start,{x:104,y:106},{x:8,z:9}),null);assert.equal(dragGearPosition(start,{x:100,y:100},{x:8,z:9}),null);assert.deepEqual(dragGearPosition(start,{x:115,y:110},{x:8,z:9},{x:-2,z:1}),{x:6,z:10});assert.deepEqual(dragGearPosition(start,start,{x:3,z:4},{x:-2,z:1},true),{x:1,z:5});assert.equal(dragGearPosition(start,{x:115,y:110},null),null);});
