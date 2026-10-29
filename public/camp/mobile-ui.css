@@ -75,3 +75,11 @@ body[data-camp-panel=actions][data-action-choice=tent] #gameUI .campPanels>#acti
 @media(max-width:360px){.activityChoiceGrid{gap:4px}.activityChoiceGrid strong{font-size:9px}.activityChoiceGrid button{padding:7px 3px}}
 @media(min-width:901px){#mapPins.named .pin .pinName{width:120px;max-width:120px;font-size:10px!important}}
 body[data-action-choice=tent] #gameUI .campPanelHeading,body[data-action-choice=meal] #gameUI .campPanelHeading{padding-bottom:7px}.choiceBack{font-size:10px;padding:0 0 7px}.mealChoices button{min-height:54px;padding:6px 4px;gap:3px}.mealChoices button>span{font-size:20px}.mealChoices strong{font-size:10px}
+/* Geographic anchors stay exact. Sparse dots become miniature camps only nearby. */
+#mapPins:not(.clustered) .pin{width:32px!important;min-width:32px!important;max-width:32px!important;height:32px!important;min-height:32px!important;transition:none!important}
+#mapPins .pin:before{left:calc(50% - 3.5px);bottom:calc(50% - 3.5px)}
+#mapPins .pin .pinName{bottom:calc(50% + 13px)}
+#mapPins.simple .pin .pinActivities{display:flex!important;position:absolute;top:25px;left:50%;transform:translateX(-50%);gap:1px;font-size:10px;pointer-events:none;white-space:nowrap}
+#mapPins.simple:not(.named) .pin:not(.selected):not(.hovered) .pinActivities{display:none!important}
+#gameUI .returnAction{grid-column:1/-1;display:flex;align-items:center;justify-content:center;gap:10px;min-height:42px;padding:6px 10px;background:#dfe8d5}#gameUI .returnAction .icon{font-size:19px;height:auto}#gameUI .returnAction small{margin:0}
+#mapPins.simple .pin.labelSuppressed:not(.selected):not(.hovered) .pinActivities{display:none!important}
