@@ -2,7 +2,7 @@
 .mapMenuToggle,.campMenuBar,.campPanelHeading{display:none}.campPanels{display:contents}
 #mapPins.named .pin .pinName{display:block!important;white-space:normal;width:124px;max-width:124px;line-height:1.5;font-size:10px!important;bottom:calc(50% + 25px);padding:6px 8px;box-shadow:0 2px 8px #294b3e14}
 #mapPins.named .pin:hover:not(.hovered):not(.selected):not(:focus-visible) .pinName{display:block!important}
-@media(max-width:900px){
+@media(min-width:0px){
  body{--mobile-bottom:calc(14px + env(safe-area-inset-bottom,0px))}
  header{height:102px;padding:12px 16px 42px;align-items:center;background:linear-gradient(#faf9f1f2,#faf9f1d9,transparent);z-index:40}
  header .brand{font-size:13px;gap:8px;letter-spacing:.5px}header .brandmark{font-size:29px;height:30px}header .brand small{font-size:6px;letter-spacing:2px}
@@ -43,3 +43,18 @@
 @media(max-width:900px){#mapUI:has(#selection:not([hidden])) .mapTools{top:66px;bottom:auto}#mapUI:has(#selection:not([hidden])) .mapSwitcher{display:none}}
 
 @media(max-width:900px){.campMenuBar{margin:0;transform:none}.campMenuBar button span{background:none;margin-left:0;border-radius:0;padding:0}}
+
+/* One menu system on every screen, with a small toolbar while moving gear. */
+.placementMiniBar{display:none;position:absolute;left:12px;right:12px;bottom:calc(var(--mobile-bottom) + 75px);z-index:32;align-items:center;gap:5px;padding:8px;background:#fffdf3f5;border:1px solid #d5dfca;border-radius:13px;box-shadow:0 4px 20px #294b3e18;pointer-events:auto;font-size:10px}
+.placementMiniBar strong{font-size:10px;flex:1;min-width:0}.placementMiniBar button{min-height:34px;padding:7px 9px;border-radius:8px;background:#e7eddd;font-size:10px;white-space:nowrap}#placementMiniDone{background:#294b3e;color:#fffdf3}
+body.placement-compact #gameUI .campPanels{display:none!important}body.placement-compact .placementMiniBar{display:flex}
+#gameUI .campMenuBar{margin:0;transform:none}#gameUI .campMenuBar button span{background:none;margin-left:0;border-radius:0;padding:0}
+body[data-camp-panel=placement] #gameUI .campPanels{padding:10px 12px}body[data-camp-panel=placement] .campPanelHeading{padding-bottom:5px}#gameUI .placementHeading{margin-bottom:6px}#gameUI .placementHeading>strong{display:none}#gameUI .placementItems{grid-template-columns:repeat(5,minmax(0,1fr));gap:4px}#gameUI .placementItems button{min-height:35px;padding:7px 3px;font-size:9px}#gameUI #placementMessage{font-size:9px;line-height:1.7;margin:8px 0}#gameUI .placementAdjust{gap:4px}#gameUI .placementAdjust>span{display:none}#gameUI .placementAdjust button{min-width:31px;height:31px;font-size:14px}
+@media(min-width:901px){
+ header .brand{font-size:18px}header .brandmark{font-size:35px;height:36px}header #accountBtn{font-size:11px;max-width:180px}
+ header nav{left:calc(50% - 220px);right:auto;width:440px}header nav button{font-size:11px}
+ #mapUI .intro{left:24px;right:auto;width:365px;max-width:none}#mapUI .mapMenuToggle{left:24px;width:185px}#mapUI .selectedAreaChip{left:225px!important;right:auto;max-width:350px}
+ #gameUI .locationLabel{left:24px;right:auto;max-width:450px;min-width:260px}#gameUI .locationLabel h1{font-size:18px}
+ #gameUI .campMenuBar,#gameUI .campPanels,.placementMiniBar{left:calc(50% - 220px);right:auto;width:440px}#gameUI .campPanels{max-height:48dvh}#gameUI .campMenuBar button{min-height:54px}#gameUI .sceneTag{bottom:calc(var(--mobile-bottom) + 78px)}
+}
+#pinLines{display:none!important}
