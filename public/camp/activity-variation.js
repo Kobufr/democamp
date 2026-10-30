@@ -32,3 +32,6 @@ export function resolveActivityPlan(visit,id,options={}){
  const location=best.p,spaceScale=outdoor?Math.min(1,Math.max(.35,best.free/r)):1;
  return {...plan,manual:false,location,relocated:true,spaceScale,placement:Object.hasOwn(radii,id)?{...location,rotation:layout[id].rotation}:plan.placement,placementKey:Object.hasOwn(radii,id)?id:null};
 }
+
+// These small experiences start where the player is standing, including during idle movement.
+export function activityStartPoint(id,{current,target,manual=null}={}){const p=['sing','bath','play'].includes(id)?current:manual|| (Object.hasOwn(radii,id)?target:null);return p?{x:p.x,z:p.z}:null;}
