@@ -21,6 +21,7 @@ export function normalizedOutdoorLocation(p){return Number.isFinite(p?.x)&&Numbe
 
 // Retry invalid requested positions in a dry clearing, without interrupting the activity.
 export function resolveActivityPlan(visit,id,options={}){
+ if(id==='walk'&&options.manual&&Math.hypot(options.manual.x,options.manual.z)<=17)return {...nextActivityPlan({...visit,actions:{}},id,options),location:{...options.manual},manual:true,relocated:false,spaceScale:1};
  let plan=nextActivityPlan(visit,id,options),relocated=!!plan.blocked;
  if(plan.blocked&&options.manual){const near=nearestActivitySpot(visit,id,options.manual,options.land);if(near){plan=nextActivityPlan(visit,id,{...options,manual:near});if(!plan.blocked)return {...plan,relocated:true,spaceScale:1};}}
  if(plan.blocked)plan=nextActivityPlan(visit,id,{land:options.land});
