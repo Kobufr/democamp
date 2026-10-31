@@ -50,12 +50,12 @@ export function activitySummary(list) {
 export function matchesCamp(camp, prefecture='すべて', attributes=[]) {
   return (prefecture==='すべて' || camp.pref===prefecture) && attributes.every(a=>camp.attributes?.includes(a));
 }
-export function createPastVisit({id,visitDate,activities,tentType='dome',weather='unknown',mealMenu=null,character='bear',carType='suv',carColor='olive',companions=[],now=new Date()}) {
+export function createPastVisit({id,visitDate,activities,tentType='dome',weather='unknown',mealMenu=null,character='bear',carType='suv',carColor='olive',tarpType='ridge',goods={},companions=[],now=new Date()}) {
   if (!isValidVisitDate(visitDate,todayInJapan(now))) throw new Error('実在する訪問日を今日以前の日付で入力してください。');
   const actions=Object.fromEntries(ACTION_KEYS.map(key=>[key,!!activities?.[key]]));
   if (!ACTION_KEYS.some(key=>actions[key])) throw new Error('体験したことを1つ以上選んでください。');
   if (actions.tent && !['dome','pole','ridge','cottage'].includes(tentType)) throw new Error('宿泊場所の種類を選んでください。');
-  return {id,visitDate,weather,carType,carColor,mealMenu:actions.meal?mealMenu:null,character,companions:structuredClone(companions),startedAt:null,recordedAt:now.toISOString(),actions,tentType:actions.tent?tentType:null,closed:true,source:'manual'};
+  return {id,visitDate,weather,carType,carColor,tarpType,goods:structuredClone(goods),mealMenu:actions.meal?mealMenu:null,character,companions:structuredClone(companions),startedAt:null,recordedAt:now.toISOString(),actions,tentType:actions.tent?tentType:null,closed:true,source:'manual'};
 }
 export function replaySnapshot(visit) {
   // Viewing a memory must never mutate the persisted record or its visit count.

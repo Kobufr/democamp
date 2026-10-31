@@ -36,8 +36,11 @@ export function resolveActivityPlan(visit,id,options={}){
 }
 
 // Tent and tarp centers use the current origin. Small gear is placed safely in front.
-export function activityStartPoint(id,{current,target,manual=null}={}){const p=current||manual||target;if(!p)return null;const offset={meal:2,fire:1.6,car:2.8}[id]||0;return {x:p.x,z:p.z-offset};}
+export function activityStartPoint(id,{current,target,manual=null}={}){const p=current||manual||target;if(!p)return null;const offset={tent:3.1,tarp:3.1,meal:2,fire:1.6,car:2.8}[id]||0;return {x:p.x,z:p.z-offset};}
 export function nearestActivitySpot(visit,id,origin,land='forest'){for(let distance=.25;distance<=20;distance+=.25){const steps=Math.max(16,Math.ceil(distance*12));for(let i=0;i<steps;i++){const angle=i/steps*Math.PI*2,p={x:origin.x+Math.cos(angle)*distance,z:origin.z+Math.sin(angle)*distance};if(!nextActivityPlan(visit,id,{manual:p,land}).blocked)return p;}}return null;}
 
 // The equipment center is the chosen origin; the builder stands beside its entrance.
 export function constructionStand(placement,visit,key){const layout=normalizeLayout(visit.layout),rotation=placement.rotation||0;const choices=[0,.4,-.4,.8,-.8,1.2,-1.2,1.6,-1.6,Math.PI].map(delta=>({x:placement.x+Math.sin(rotation+delta)*3.1,z:placement.z+Math.cos(rotation+delta)*3.1}));return choices.find(p=>Math.hypot(p.x,p.z)<16.8&&Object.keys(radii).every(k=>k===key||!visit.actions?.[k]||Math.hypot(p.x-layout[k].x,p.z-layout[k].z)>radii[k]+.7))||choices[0];}
+
+// Working on equipment never changes the actor's origin, even when gear is relocated.
+export function activityDestination(id,origin,location,{manual=false,water=false,spaceScale=1}={}){if(['tent','tarp','fire','meal'].includes(id))return {x:origin.x,z:origin.z};return {x:location.x,z:location.z+(manual||water?0:1.5*spaceScale)};}

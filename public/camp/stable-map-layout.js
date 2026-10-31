@@ -2,3 +2,6 @@
 export function visibleNameSlots(points,width=110,height=42){const accepted=[],visible=new Set();const ordered=[...points].sort((a,b)=>(b.priority||0)-(a.priority||0)||(a.id<b.id?-1:a.id>b.id?1:0));for(const p of ordered){const overlaps=accepted.some(q=>Math.abs(p.x-q.x)<width+6&&Math.abs(p.y-q.y)<height+5);if(!overlaps||p.priority){accepted.push(p);visible.add(p.id);}}return visible;}
 // Reveal close neighbors as their true projected separation grows. Never relocate pins.
 export function progressiveSlots(points,gap=18){const chosen=[],ids=new Set();for(const p of [...points].sort((a,b)=>(b.priority||0)-(a.priority||0)||(a.id<b.id?-1:a.id>b.id?1:0))){if(!chosen.some(q=>Math.hypot(p.x-q.x,p.y-q.y)<gap)){ids.add(p.id);}chosen.push(p);}return ids;}
+
+// A few bounded label alternatives, then gentle overlap; geographic anchors stay fixed.
+export function placeNameLabels(points,width=112,height=38){const placed=[],out=new Map();for(const p of [...points].sort((a,b)=>(b.priority||0)-(a.priority||0)||a.id.localeCompare(b.id))){const choices=[{x:0,y:0},{x:0,y:-height-8},{x:width*.55,y:-height*.5},{x:-width*.55,y:-height*.5},{x:0,y:height+8}],offset=choices.find(o=>!placed.some(q=>Math.abs(p.x+o.x-q.x)<width&&Math.abs(p.y+o.y-q.y)<height))||choices[0];out.set(p.id,offset);placed.push({x:p.x+offset.x,y:p.y+offset.y});}return out;}
