@@ -5,3 +5,5 @@ export function separateMapPoints(points,gap=68){const out=points.map(p=>({...p,
 
 export function partyPositions(x,z,count){return Array.from({length:count},(_,i)=>{const angle=(i+1)*Math.PI*2/(count+1)+Math.PI/2;let px=x+Math.cos(angle)*2,pz=z+Math.sin(angle)*2;const length=Math.hypot(px,pz);if(length>13.7){px*=13.7/length;pz*=13.7/length;}return {x:px,z:pz};});}
 export function showMapNames(distance,previous=false){return distance<=(previous?36:32);}
+
+export function mapDetailPolicy(distance,count,previous=false){const sparse=count>0&&count<=6;return {sparse,names:sparse||showMapNames(distance,previous),models:sparse||distance<=42};}
