@@ -14,7 +14,7 @@ const weather={
  sunny:{name:'晴れ',sky:0xc3e0e8,clouds:1,sun:4,ambient:2.6},
  mixed:{name:'晴れ時々くもり',sky:0xcbdfe2,clouds:4,sun:3.1,ambient:2.4},
  cloudy:{name:'くもり',sky:0xbdc9ca,clouds:7,sun:1.2,ambient:2.2},
- rainy:{name:'雨',sky:0x8fabb6,clouds:8,sun:.6,ambient:1.8,precipitation:'rain',count:190},
+ rainy:{name:'雨',sky:0x8fabb6,clouds:8,sun:.6,ambient:1.8,precipitation:'rain',count:78},
  snowy:{name:'雪',sky:0xc5d5db,clouds:6,sun:1,ambient:2.1,precipitation:'snow',count:95}
 };
 export function environmentForVisit(visit,land='forest'){
@@ -22,7 +22,7 @@ export function environmentForVisit(visit,land='forest'){
  return {...s,...w,season,snowCover:visit.weather==='snowy',wet:visit.weather==='rainy',land,summary:`${s.name} ・ ${w.name}`};
 }
 // One small point buffer per effect, also understood by the software renderer.
-export function particlePosition(kind,index,time){const seed=(index*0.61803398875)%1,span=kind==='rain'?17:14,speed=kind==='rain'?15:kind==='snow'?1.6:.75;return {x:((index*7.13)%30)-15+Math.sin(time*.6+index)*(kind==='rain'?.25:.9),y:span-((seed*span+time*speed)%span),z:((index*11.71)%28)-14};}
+export function particlePosition(kind,index,time){const seed=(index*0.61803398875)%1,span=kind==='rain'?17:14,speed=kind==='rain'?7.5:kind==='snow'?1.6:.75;return {x:((index*7.13)%30)-15+Math.sin(time*.6+index)*(kind==='rain'?.08:.9),y:span-((seed*span+time*speed)%span),z:((index*11.71)%28)-14};}
 export class CampEnvironment{
  constructor(root,materialForColor){this.root=root;this.materialForColor=materialForColor;this.group=null;this.key='';this.particles=[];this.clouds=[];}
  clear(){if(this.group){this.root.remove(this.group);this.group.traverse(o=>{o.geometry?.dispose();if(o.material&&!o.userData.shared)o.material.dispose();});}this.group=null;this.particles=[];this.clouds=[];}
@@ -35,6 +35,6 @@ export class CampEnvironment{
  if(config.drift)this.addParticles(config.drift,config.drift==='petals'?20:26,config.driftColor);
  for(let i=0;i<16;i++){const angle=i*2.39996,x=Math.cos(angle)*(11+i%4),z=Math.sin(angle)*(11+i%4);if(!allowsPerimeterTree(land,x,z))continue;if(config.snowCover){const m=addMesh(new THREE.CircleGeometry(.5+i%3*.2,7),0xeef2eb,x,.03,z);m.rotation.x=-Math.PI/2;m.userData.layer=-1;}else if(config.season==='autumn'){const m=addMesh(new THREE.CircleGeometry(.16,4),config.leaves[i%3],x,.03,z);m.rotation.x=-Math.PI/2;m.userData.layer=-1;}else if(config.season==='spring'){const m=addMesh(new THREE.SphereGeometry(.12,5,3),0xf1c6d0,x,.2,z);m.scale.y=.5;}}
  return config;}
- addParticles(kind,count,color){const geo=new THREE.BufferGeometry(),rain=kind==='rain';geo.setAttribute('position',new THREE.Float32BufferAttribute(new Float32Array(count*(rain?6:3)),3));const p=rain?new THREE.LineSegments(geo,new THREE.LineBasicMaterial({color,transparent:true,opacity:.88,depthWrite:false})):new THREE.Points(geo,new THREE.PointsMaterial({color,size:.13,transparent:true,opacity:.9,depthWrite:false}));p.userData.weatherParticle=kind;p.frustumCulled=false;this.group.add(p);this.particles.push({p,kind,count});}
- update(time,night=false,reducedMotion=false){for(const c of this.clouds){c.position.x=c.userData.baseX+Math.sin(time*.06+c.userData.baseX)*.8;c.visible=!night;}if(this.sunDisc)this.sunDisc.visible=!night;for(const {p,kind,count} of this.particles){p.visible=!night||kind==='rain'||kind==='snow';if(!p.visible)continue;const pos=p.geometry.attributes.position;for(let i=0;i<count;i++){const v=particlePosition(kind,i,reducedMotion?(kind==='rain'?time*.4:0):time);if(kind==='rain'){pos.setXYZ(i*2,v.x,v.y,v.z);pos.setXYZ(i*2+1,v.x-.12,v.y-.8,v.z);}else pos.setXYZ(i,v.x,v.y,v.z);}pos.needsUpdate=true;}}
+ addParticles(kind,count,color){const geo=new THREE.BufferGeometry(),rain=kind==='rain';geo.setAttribute('position',new THREE.Float32BufferAttribute(new Float32Array(count*(rain?6:3)),3));const p=rain?new THREE.LineSegments(geo,new THREE.LineBasicMaterial({color,transparent:true,opacity:.38,depthWrite:false})):new THREE.Points(geo,new THREE.PointsMaterial({color,size:.13,transparent:true,opacity:.9,depthWrite:false}));p.userData.weatherParticle=kind;p.frustumCulled=false;this.group.add(p);this.particles.push({p,kind,count});}
+ update(time,night=false,reducedMotion=false){for(const c of this.clouds){c.position.x=c.userData.baseX+Math.sin(time*.06+c.userData.baseX)*.8;c.visible=!night;}if(this.sunDisc)this.sunDisc.visible=!night;for(const {p,kind,count} of this.particles){p.visible=!night||kind==='rain'||kind==='snow';if(!p.visible)continue;const pos=p.geometry.attributes.position;for(let i=0;i<count;i++){const v=particlePosition(kind,i,reducedMotion?(kind==='rain'?time*.4:0):time);if(kind==='rain'){pos.setXYZ(i*2,v.x,v.y,v.z);pos.setXYZ(i*2+1,v.x-.03,v.y-.34,v.z);}else pos.setXYZ(i,v.x,v.y,v.z);}pos.needsUpdate=true;}}
 }
