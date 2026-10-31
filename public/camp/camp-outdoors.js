@@ -13,3 +13,6 @@ export function createWalkRoute(camp,visit,start){let nodes=[];for(let z=0;z<=13
 export function walkRouteLength(route){return route.slice(1).reduce((n,p,i)=>n+Math.hypot(p.x-route[i].x,p.z-route[i].z),0);}
 export function sampleWalkRoute(route,elapsed,offset=0,speed=2.7){if(!route.length)return {x:0,z:0,angle:0,done:true};let d=Math.max(0,elapsed*speed-offset);for(let i=1;i<route.length;i++){const a=route[i-1],b=route[i],len=Math.hypot(b.x-a.x,b.z-a.z);if(d<=len)return {x:a.x+(b.x-a.x)*d/(len||1),z:a.z+(b.z-a.z)*d/(len||1),angle:Math.atan2(b.x-a.x,b.z-a.z),done:false};d-=len;}return {...route.at(-1),angle:0,done:true};}
 export function worldStarPositions(random=Math.random,count=360){const positions=[];for(let i=0;i<count;i++){const angle=random()*Math.PI*2,y=.025+random()*.975,r=170,h=Math.sqrt(1-y*y)*r;positions.push(Math.cos(angle)*h,y*r,Math.sin(angle)*h);}return positions;}
+
+// Independent slow twinkles with an occasional brief glint, without moving stars.
+export function starBrightness(index,time){const phase=index*2.39996,slow=.5+.18*Math.sin(time*(.6+(index%7)*.09)+phase),cycle=(time+index*1.73)%17,glint=index%5===0?Math.pow(Math.max(0,1-Math.abs(cycle-8.5)/.35),2)*.45:0;return Math.min(1,slow+glint);}

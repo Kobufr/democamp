@@ -22,6 +22,7 @@ export function normalizedOutdoorLocation(p){return Number.isFinite(p?.x)&&Numbe
 // Retry invalid requested positions in a dry clearing, without interrupting the activity.
 export function resolveActivityPlan(visit,id,options={}){
  let plan=nextActivityPlan(visit,id,options),relocated=!!plan.blocked;
+ if(plan.blocked&&options.manual){const near=nearestActivitySpot(visit,id,options.manual,options.land);if(near){plan=nextActivityPlan(visit,id,{...options,manual:near});if(!plan.blocked)return {...plan,relocated:true,spaceScale:1};}}
  if(plan.blocked)plan=nextActivityPlan(visit,id,{land:options.land});
  const outdoor=['play','swim','fish','sing','walk','bath'].includes(id),needsSearch=outdoor&&!plan.location||relocated&&Object.hasOwn(radii,id);
  if(!needsSearch)return {...plan,relocated,spaceScale:1};
@@ -33,5 +34,6 @@ export function resolveActivityPlan(visit,id,options={}){
  return {...plan,manual:false,location,relocated:true,spaceScale,placement:Object.hasOwn(radii,id)?{...location,rotation:layout[id].rotation}:plan.placement,placementKey:Object.hasOwn(radii,id)?id:null};
 }
 
-// These small experiences start where the player is standing, including during idle movement.
-export function activityStartPoint(id,{current,target,manual=null}={}){const p=['sing','bath','play'].includes(id)?current:manual|| (Object.hasOwn(radii,id)?target:null);return p?{x:p.x,z:p.z}:null;}
+// Current position is the activity origin. New equipment sits just ahead of the actor.
+export function activityStartPoint(id,{current,target,manual=null}={}){const p=current||manual||target;if(!p)return null;const offset={tent:3.5,tarp:3.5,meal:2,fire:1.6}[id]||0;return {x:p.x,z:p.z-offset};}
+export function nearestActivitySpot(visit,id,origin,land='forest'){for(let distance=.25;distance<=20;distance+=.25){const steps=Math.max(16,Math.ceil(distance*12));for(let i=0;i<steps;i++){const angle=i/steps*Math.PI*2,p={x:origin.x+Math.cos(angle)*distance,z:origin.z+Math.sin(angle)*distance};if(!nextActivityPlan(visit,id,{manual:p,land}).blocked)return p;}}return null;}
