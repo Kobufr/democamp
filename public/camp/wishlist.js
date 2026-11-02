@@ -1,0 +1,2 @@
+export function wishlistFields(data={}){if(typeof data.wishlist!=='boolean'||typeof data.wishlistUpdatedAt!=='string'||!Number.isFinite(Date.parse(data.wishlistUpdatedAt)))return {};return {wishlist:data.wishlist,wishlistUpdatedAt:data.wishlistUpdatedAt};}
+export function latestWishlist(remote={},local={}){const a=wishlistFields(remote),b=wishlistFields(local);return (b.wishlistUpdatedAt||'')>(a.wishlistUpdatedAt||'')?b:a;}
