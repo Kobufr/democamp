@@ -5,10 +5,10 @@ export const MEALS={curry:{name:'カレーライス',icon:'🍛'},bbq:{name:'バ
 export const CAR_COLORS={olive:{name:'オリーブ',color:0x8b9e80},sand:{name:'サンド',color:0xd7b482},cream:{name:'アイボリー',color:0xf0e9d6},navy:{name:'ネイビー',color:0x526e8e},red:{name:'レッド',color:0xc77969},sky:{name:'スカイブルー',color:0x83b9cb}};
 export const CAR_TYPES={suv:{name:'SUV',color:0x8b9e80,width:1,height:1,length:1},compact:{name:'コンパクトカー',color:0xdbaf7b,width:.88,height:.85,length:.82},minivan:{name:'ミニバン',color:0xa4b7c0,width:1,height:1.13,length:1.12},camper:{name:'キャンピングカー',color:0xd7c7a6,width:1.03,height:1,length:1.1}};
 export const FABRIC_COLORS={original:{name:'定番カラー',color:null},sand:{name:'サンド',color:0xd8b77d},olive:{name:'オリーブ',color:0x829869},navy:{name:'ネイビー',color:0x637d9d},red:{name:'テラコッタ',color:0xc67d69},cream:{name:'アイボリー',color:0xf0e6ca},sky:{name:'スカイブルー',color:0x89bcc8}};
-export const CLOTHING_COLORS={original:{name:'キャラクターの定番色',color:null},moss:{name:'モスグリーン',color:0x6c8d74},sand:{name:'サンド',color:0xd1ae7b},navy:{name:'ネイビー',color:0x5b7897},red:{name:'レッド',color:0xc37c72},lavender:{name:'ラベンダー',color:0xa596ba},sky:{name:'スカイブルー',color:0x83b6c7}};
-export const OUTFIT_STYLES={outdoor:'アウトドアシャツ',striped:'ボーダーシャツ',vest:'ベスト',raincoat:'レインコート'};
-export const HAT_STYLES={auto:'キャラクターにおまかせ',cap:'キャップ',none:'帽子なし'};
-export function normalizeOutfit(value={}){return {style:Object.hasOwn(OUTFIT_STYLES,value?.style)?value.style:'outdoor',color:Object.hasOwn(CLOTHING_COLORS,value?.color)?value.color:'original',hat:Object.hasOwn(HAT_STYLES,value?.hat)?value.hat:'auto'};}
+export const CLOTHING_COLORS={original:{name:'キャラクターにまかせる',color:null},moss:{name:'モスグリーン',color:0x6c8d74},sand:{name:'サンド',color:0xd1ae7b},navy:{name:'ネイビー',color:0x5b7897},red:{name:'レッド',color:0xc37c72},lavender:{name:'ラベンダー',color:0xa596ba},sky:{name:'スカイブルー',color:0x83b6c7}};
+export const OUTFIT_STYLES={auto:'キャラクターにまかせる',outdoor:'アウトドアシャツ',striped:'ボーダーシャツ',vest:'ベスト',raincoat:'レインコート'};
+export const HAT_STYLES={auto:'キャラクターにまかせる',cap:'キャップ',none:'帽子なし'};
+export function normalizeOutfit(value={}){return {style:Object.hasOwn(OUTFIT_STYLES,value?.style)?value.style:'auto',color:Object.hasOwn(CLOTHING_COLORS,value?.color)?value.color:'original',hat:Object.hasOwn(HAT_STYLES,value?.hat)?value.hat:'auto'};}
 export const TARP_TYPES={ridge:'レクタタープ',hex:'ヘキサタープ',wing:'ウイングタープ'};
 export const GOODS_OPTIONS={chair:{name:'チェア',choices:{folding:'フォールディングチェア',wood:'ウッドチェア'}},lantern:{name:'ランタン',choices:{classic:'クラシックランタン',led:'LEDランタン'}},cooler:{name:'クーラーボックス',choices:{compact:'コンパクト',large:'ファミリーサイズ'}}};
 export function normalizeGoods(value={}){return Object.fromEntries(Object.entries(GOODS_OPTIONS).map(([key,v])=>[key,Object.hasOwn(v.choices,value?.[key])?value[key]:Object.keys(v.choices)[0]]));}

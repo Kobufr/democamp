@@ -21,6 +21,7 @@ export function normalizedOutdoorLocation(p){return Number.isFinite(p?.x)&&Numbe
 
 // Retry invalid requested positions in a dry clearing, without interrupting the activity.
 export function resolveActivityPlan(visit,id,options={}){
+ if(id==='meal'&&visit.actions?.meal){const location=normalizeLayout(visit.layout).meal;return {...nextActivityPlan(visit,id,{}),location:{...location},blocked:undefined,placement:null,manual:false,relocated:false,spaceScale:1};}
  if(id==='walk'&&options.manual&&Math.hypot(options.manual.x,options.manual.z)<=17)return {...nextActivityPlan({...visit,actions:{}},id,options),location:{...options.manual},manual:true,relocated:false,spaceScale:1};
  let plan=nextActivityPlan(visit,id,options),relocated=!!plan.blocked;
  if(plan.blocked&&options.manual){const near=nearestActivitySpot(visit,id,options.manual,options.land);if(near){plan=nextActivityPlan(visit,id,{...options,manual:near});if(!plan.blocked)return {...plan,relocated:true,spaceScale:1};}}
@@ -43,4 +44,4 @@ export function nearestActivitySpot(visit,id,origin,land='forest'){for(let dista
 export function constructionStand(placement,visit,key){const layout=normalizeLayout(visit.layout),rotation=placement.rotation||0;const choices=[0,.4,-.4,.8,-.8,1.2,-1.2,1.6,-1.6,Math.PI].map(delta=>({x:placement.x+Math.sin(rotation+delta)*3.1,z:placement.z+Math.cos(rotation+delta)*3.1}));return choices.find(p=>Math.hypot(p.x,p.z)<16.8&&Object.keys(radii).every(k=>k===key||!visit.actions?.[k]||Math.hypot(p.x-layout[k].x,p.z-layout[k].z)>radii[k]+.7))||choices[0];}
 
 // Working on equipment never changes the actor's origin, even when gear is relocated.
-export function activityDestination(id,origin,location,{manual=false,water=false,spaceScale=1}={}){if(['tent','tarp','fire','meal'].includes(id))return {x:origin.x,z:origin.z};return {x:location.x,z:location.z+(manual||water?0:1.5*spaceScale)};}
+export function activityDestination(id,origin,location,{manual=false,water=false,spaceScale=1,existingTable=null}={}){if(id==='meal'&&existingTable){const angle=existingTable.rotation||0;return {x:existingTable.x+Math.sin(angle)*2,z:existingTable.z+Math.cos(angle)*2};}if(['tent','tarp','fire','meal'].includes(id))return {x:origin.x,z:origin.z};return {x:location.x,z:location.z+(manual||water?0:1.5*spaceScale)};}
