@@ -1,8 +1,8 @@
 import * as THREE from './vendor/three.module.js';
 import {CAR_TYPES,CAR_COLORS} from './preferences.js';
-export function createVehicle(type='suv',color='olive'){
+export function createVehicle(type='suv',color='olive',design=''){
  if(!Object.hasOwn(CAR_TYPES,type))type='suv';const paint=CAR_COLORS[color]?.color??CAR_COLORS.olive.color,g=new THREE.Group(),dark=0x40544d,glass=0xa9d3d9,cream=0xf0e9d6;
- g.userData.carType=type;g.userData.carColor=color;g.userData.wheels=[];
+ g.userData.productDesign=design;g.userData.carType=type;g.userData.carColor=color;g.userData.wheels=[];
  const materials=new Map();g.userData.ownedMaterials=materials;const mat=c=>{if(!materials.has(c))materials.set(c,new THREE.MeshStandardMaterial({color:c,roughness:.75}));return materials.get(c);},box=(w,h,d,c,x,y,z,parent=g)=>{const m=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),mat(c));m.position.set(x,y,z);parent.add(m);return m;};
  const cyl=(r,depth,c,x,y,z,parent=g)=>{const m=new THREE.Mesh(new THREE.CylinderGeometry(r,r,depth,12),mat(c));m.position.set(x,y,z);m.rotation.z=Math.PI/2;parent.add(m);return m;};
  const compact=type==='compact',camper=type==='camper',van=type==='minivan',width=compact?1.45:camper?1.85:1.7,length=compact?2.35:camper?3.6:van?3.4:2.95,wheel=compact?.28:type==='suv'?.4:.34,axle=compact?.7:camper?1.18:van?1.1:.93;
@@ -13,6 +13,10 @@ export function createVehicle(type='suv',color='olive'){
  if(van){box(1.55,1.05,2.8,paint,0,1.38,-.15);box(1.56,.63,.04,glass,0,1.51,1.27);box(1.56,.55,.04,glass,0,1.5,-1.57);for(const x of [-.79,.79]){for(const z of [-1.04,-.18,.68])box(.035,.5,.68,glass,x,1.57,z);box(.045,.025,1.3,cream,x,1.15,-.55);box(.045,.7,.02,dark,x,1.25,.3);}box(1.5,.08,2.75,cream,0,1.95,-.15);}
  if(camper){box(1.85,1.5,2.25,cream,0,1.38,-.63);box(1.8,.16,2.2,paint,0,.93,-.63);box(1.75,.55,2.8,paint,0,2.17,-.35);box(1.6,.8,.85,paint,0,1.1,1.2);box(1.61,.48,.045,glass,0,1.28,1.65);for(const x of [-.945,.945]){for(const z of [-1.15,-.25])box(.04,.46,.6,glass,x,1.64,z);box(.05,.08,2.2,paint,x,1.09,-.6);}box(.08,.12,2.2,dark,.99,2.03,-.65);box(.04,.9,.5,paint,-.96,1.08,-.45);box(.07,.09,.08,cream,-1,1.2,-.3);}
  for(const x of [-width*.32,width*.32]){box(.3,.18,.05,0xffedb4,x,wheel+.4,length/2+.03);box(.22,.15,.05,0xc97959,x,wheel+.4,-length/2-.03);}
+ // Mirrors, radiator grille, wheel hubs and handles give each silhouette depth.
+ for(const side of [-1,1]){box(.16,.14,.25,paint,side*(width/2+.1),wheel+1.02,.5);box(.07,.045,.17,cream,side*(width/2+.03),wheel+.75,-.1);for(const z of [-axle,axle]){const hub=cyl(wheel*.2,.25,0x6d776e,side*width/2,wheel+.04,z);hub.name='wheel-hub';}}
+ box(width*.45,.22,.045,dark,0,wheel+.4,length/2+.06);for(let i=-2;i<=2;i++)box(.025,.18,.015,cream,i*.12,wheel+.4,length/2+.09);
+ if(design==='jimny'&&type==='suv'){for(const x of [-width*.32,width*.32]){const light=new THREE.Mesh(new THREE.CylinderGeometry(.12,.12,.04,16),mat(0xffedb4));light.rotation.x=Math.PI/2;light.position.set(x,wheel+.43,length/2+.085);light.name='round-headlight';g.add(light);}}
  const door=new THREE.Group();door.position.set(-width/2-.02,wheel+.3,compact?.55:van?1.1:camper?1.42:.62);g.add(door);box(.05,.55,.65,paint,0,.3,-.32,door);box(.055,.3,.55,glass,-.01,.6,-.3,door);g.userData.door=door;return g;
 }
 export function vehicleIllustration(type='suv',color='olive'){const paint='#'+(CAR_COLORS[color]?.color??CAR_COLORS.olive.color).toString(16).padStart(6,'0'),body={compact:'M20 61V47L35 30H73L91 47H103V65H20Z',suv:'M12 65V38H73L80 49H108V67H12Z',minivan:'M12 65V24H82L107 45V66H12Z',camper:'M10 65V16H84V31H98L111 49V66H10Z'}[type]||'';return `<svg viewBox="0 0 125 82" aria-hidden="true"><path d="${body}" fill="${paint}" stroke="#587362" stroke-width="2"/><path d="M29 34H70V47H29ZM82 38H92L102 48H82Z" fill="#b9dae0"/>${type==='suv'?'<path d="M17 30H72" stroke="#40544d" stroke-width="5"/>':type==='camper'?'<path d="M16 24H72V51H16Z" fill="#f0e9d6"/><path d="M22 31H42V43H22ZM49 31H65V43H49Z" fill="#b9dae0"/>':''}<circle cx="32" cy="65" r="10" fill="#40544d"/><circle cx="92" cy="65" r="10" fill="#40544d"/><circle cx="32" cy="65" r="4" fill="#d5d7c8"/><circle cx="92" cy="65" r="4" fill="#d5d7c8"/></svg>`;}
