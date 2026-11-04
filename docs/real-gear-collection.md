@@ -1,12 +1,12 @@
 # 実在商品と自分の持ち物
 
-マイページの「装備」または「車」から、各カテゴリの「選ぶ・登録」を開きます。
+マイページの「装備」はテント・タープ・ランタン・チェア・クーラーのカテゴリタブで切り替えます。「車」は専用タブです。各カテゴリには選択中の初期装備と所有数を別領域に表示します。
 
 - **商品を探す**: メーカー名・商品名で検索し、「持ち物に追加」。日本語のメーカー名にも対応。
 - **自分の持ち物**: 「この道具を使う」で次のキャンプ用に選択。追加だけでは選択は変わりません。
 - **自分で登録**: カテゴリと商品名が必須。メーカー、メモ、HTTPSの商品URL、写真は任意。
 - 自分で登録した商品の編集・削除に対応。削除直後は「取り消して持ち物に戻す」で復元できます。
-- 3Dの形と色を調整でき、庭に反映。新しいキャンプに引き継ぎ、訪問時の商品名を記録します。進行中・過去の訪問は後から持ち物を変更しても変わりません。
+- 3Dの形と色を調整でき、庭に反映。新しいキャンプに初期装備として引き継ぎ、訪問時の商品名・IDを記録します。マイページからの変更は進行中・過去の訪問に影響しません。キャンプ中は「装備」から所有済み商品の中で今回の道具を変更できます。変更は現在の訪問だけに保存し、配置座標・向き・体験済みの状態は維持します。テント設営・タープ設営・車の到着の体験でも、該当カテゴリの持ち物があれば商品を選べます。
 
 ## データと保存
 
@@ -30,3 +30,23 @@
 - Coleman 54QT スチールベルトクーラー: https://ec.coleman.co.jp/ext/pickup_54qt_steelbeltedcooler.html
 
 商品追加時は安定した一意のID、カテゴリ、表示形状、配色、メーカーの商品URLを設定します。記録済みの訪問が参照する `design` は再利用しません。
+
+## 商品別表示の拡充
+
+共通商品は各カテゴリ3点、合計18点。追加商品の情報源:
+
+- TOYOTA ハイエース バン: https://toyota.jp/hiacevan/
+- MITSUBISHI デリカD:5: https://www.mitsubishi-motors.com/jp/newsroom/newsrelease/2026/20260109_1.html
+- Coleman ツーリングドーム/LX: https://www.coleman.co.jp/customersupport/howtomovie/2000038142/
+- tent-Mark DESIGNS サーカスTC DX+: https://www.tent-mark.com/products/circus_tc_dx_sand_color/
+- DOD いつかのタープ: https://www.dod.camp/product/tt5_631_tn/
+- snow peak レクタ(M): https://www.snowpeak.com/products/recta-tarp-m
+- Coleman ワンマントルランタン: https://www.coleman.co.jp/customersupport/howtomovie/2164001-2169494/
+- 5050WORKSHOP MINIMALight: https://5050workshop.com/products/minimalight
+- snow peak ローチェア30: https://ec.snowpeak.co.jp/item/SNP0116A0238
+- Coleman レイチェア: https://partscatalog.special-coleman.com/catalog/detail/1182
+- YETI Tundra 45: https://www.yeti.com/coolers/hard-coolers/tundra/tundra-45.html
+- snow peak ソフトクーラー18: https://www.snowpeak.com/collections/under-100/products/soft-cooler-18-fp-118
+
+商品ごとの `design` で3Dの幾何形状と紹介イラストを変えています。新旧の訪問記録は `gearSnapshot` のID、または既存の `design` を使って選択中の商品を識別します。
+キャンプ画面には商品カタログを直接出さず、マイページで登録済みの持ち物だけを選択肢として表示します。
