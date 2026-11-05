@@ -35,6 +35,7 @@ export function createDetailedGoods(goods={},snapshot={}){
  fabric(points,[[0,1,2],[1,3,2],[2,3,6],[2,6,4],[6,5,4],[3,5,6]],cloth).name='chair-sling-seat';
  for(const side of [-1,1]){rod(at(side*.34,.04,.4),at(-side*.35,high?1.62:low?1.28:1.18,high?-.65:-.36),.025,frame,!wood);rod(at(side*.34,.04,-.32),at(-side*.4,.54,.35),.025,frame,!wood);for(const z of [-.32,.4]){const foot=add(new THREE.SphereGeometry(.05,8,6),0x363f38,...at(side*.34,.04,z));foot.scale.y=.6;}if(wood||high){rod(at(side*.46,.75,.3),at(side*.46,.75,-.3),.045,low?0xb18b5b:frame);}}
  if(high)add(new THREE.BoxGeometry(.65,.15,.1),cloth,...at(0,1.43,-.55)).name='laychair-headrest';if(low){for(const x of [-.46,.46])add(new THREE.BoxGeometry(.12,.055,.6),0xc19a6b,...at(x,.77,0)).name='lowchair-wood-arm';}rod(at(-.34,.4,0),at(.34,.4,0),.035,frame);for(let i=0;i<2;i++)rod(points[i],points[i+2],.012,0xcac8b4);
+ for(const part of g.children)part.userData.gearCategory='chair';
  const coolerDesign=snapshot.cooler?.design||'',soft=coolerDesign==='soft-cooler',tundra=coolerDesign==='tundra',large=goods.cooler==='large',w=large?1.1:.7,cx=2.5,cz=2.5,coolerColor=palette[snapshot.cooler?.color]||0x8aaeb5;
  const cooler=add(new THREE.BoxGeometry(w,.55,.6),coolerColor,cx,.3,cz);cooler.name='cooler-body';
  add(new THREE.BoxGeometry(w+.045,soft?.055:tundra?.16:.1,.65),soft?coolerColor:tundra?coolerColor:0xd8d7c8,cx,.62,cz,!soft&&!tundra).name='cooler-lid';
@@ -45,10 +46,22 @@ export function createDetailedGoods(goods={},snapshot={}){
  if(tundra){for(const x of [cx-.3,cx+.3]){add(new THREE.BoxGeometry(.05,.2,.05),0x383f35,x,.49,cz+.34).name='tundra-rubber-latch';add(new THREE.BoxGeometry(.13,.035,.06),0x383f35,x,.42,cz+.35);}}
  else add(new THREE.BoxGeometry(.1,.17,.045),0x9ca89f,cx,.49,cz+.335,true).name='cooler-latch';
  }
+ for(const part of g.children)if(!part.userData.gearCategory)part.userData.gearCategory='cooler';
  const lx=0,lz=3.2,led=goods.lantern==='led',glow=0xffdba0,lanternColor=palette[snapshot.lantern?.color]||0x54705c;
  add(new THREE.CylinderGeometry(.32,.36,.06,18),0xa48762,lx,.48,lz);rod([0,0,lz],[0,.48,lz],.035,0x776d57);
  if(snapshot.lantern?.design==='minimalight'){add(new THREE.CylinderGeometry(.075,.075,.48,16),lanternColor,0,.83,lz).name='minimalight-cylinder';add(new THREE.CylinderGeometry(.078,.078,.2,16),glow,0,.87,lz);add(new THREE.CylinderGeometry(.09,.09,.07,16),0x3a443c,0,1.1,lz);rod([0,1.13,lz],[0,1.22,lz],.015,0x777e6b);}
  else if(led){const shade=add(new THREE.SphereGeometry(.24,18,12),0xf1eddf,lx,.79,lz);shade.scale.y=.8;shade.name='lantern-diffuser';add(new THREE.CylinderGeometry(.11,.19,.09,14),lanternColor,0,1.01,lz);const bail=add(new THREE.TorusGeometry(.12,.018,6,18),0x9a9d8f,0,1.16,lz,true);bail.name='lantern-handle';add(new THREE.SphereGeometry(.08,10,6),glow,0,.68,lz);}
  else{add(new THREE.CylinderGeometry(.19,.23,.16,16),lanternColor,0,.6,lz);add(new THREE.CylinderGeometry(.14,.14,.31,16),0xf4dca8,0,.83,lz).name='lantern-globe';add(new THREE.ConeGeometry(.26,.13,16),lanternColor,0,1.05,lz);for(const x of [-.16,.16])rod([x,.68,lz],[x,1.01,lz],.013,0x879286,true);const bail=add(new THREE.TorusGeometry(.2,.016,6,18,Math.PI),0x7e8b7b,0,1.02,lz,true);bail.name='lantern-handle';}
+ for(const part of g.children)if(!part.userData.gearCategory)part.userData.gearCategory='lantern';
  return g;
+}
+
+export function createSingleGearGoods(item){
+ const full=createDetailedGoods({chair:'folding',lantern:'classic',cooler:'compact',[item.category]:item.model},{[item.category]:item});
+ for(const part of [...full.children])if(part.userData.gearCategory!==item.category){full.remove(part);part.geometry?.dispose();}
+ const retained=new Set(full.children.map(part=>part.material));
+ for(const [key,material] of full.userData.ownedMaterials)if(!retained.has(material)){material.dispose();full.userData.ownedMaterials.delete(key);}
+ const centers={chair:[-2.4,2.6],cooler:[2.5,2.5],lantern:[0,3.2]},[x,z]=centers[item.category]||[0,0];
+ full.position.set(-x,0,-z);full.name='single-gear-'+item.category;
+ const wrapper=new THREE.Group();wrapper.add(full);wrapper.userData.gearCategory=item.category;return wrapper;
 }
