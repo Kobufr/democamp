@@ -1,3 +1,4 @@
+import {WALK_SPEED} from './movement.js';
 import {coastZ} from './coastal-geometry.js';
 import {normalizeLayout} from './camp-layout.js';
 export const sceneCoastZ=x=>coastZ(x/1.55)*1.55;
@@ -12,7 +13,7 @@ export function createWalkRoute(camp,visit,start){let nodes=[];for(let z=-6;z<=7
  for(const target of [{x:-4,z:-4},{x:1,z:-6},{x:9,z:-3},{x:10,z:3},{x:4,z:5}])link(nearest(target));link(origin);return route;
 }
 export function walkRouteLength(route){return route.slice(1).reduce((n,p,i)=>n+Math.hypot(p.x-route[i].x,p.z-route[i].z),0);}
-export function sampleWalkRoute(route,elapsed,offset=0,speed=2.7){if(!route.length)return {x:0,z:0,angle:0,done:true};let d=Math.max(0,elapsed*speed-offset);for(let i=1;i<route.length;i++){const a=route[i-1],b=route[i],len=Math.hypot(b.x-a.x,b.z-a.z);if(d<=len)return {x:a.x+(b.x-a.x)*d/(len||1),z:a.z+(b.z-a.z)*d/(len||1),angle:Math.atan2(b.x-a.x,b.z-a.z),done:false};d-=len;}return {...route.at(-1),angle:0,done:true};}
+export function sampleWalkRoute(route,elapsed,offset=0,speed=WALK_SPEED){if(!route.length)return {x:0,z:0,angle:0,done:true};let d=Math.max(0,elapsed*speed-offset);for(let i=1;i<route.length;i++){const a=route[i-1],b=route[i],len=Math.hypot(b.x-a.x,b.z-a.z);if(d<=len)return {x:a.x+(b.x-a.x)*d/(len||1),z:a.z+(b.z-a.z)*d/(len||1),angle:Math.atan2(b.x-a.x,b.z-a.z),done:false};d-=len;}return {...route.at(-1),angle:0,done:true};}
 export function worldStarPositions(random=Math.random,count=360){const positions=[];for(let i=0;i<count;i++){const angle=random()*Math.PI*2,y=.025+random()*.975,r=170,h=Math.sqrt(1-y*y)*r;positions.push(Math.cos(angle)*h,y*r,Math.sin(angle)*h);}return positions;}
 
 // Independent slow twinkles with an occasional brief glint, without moving stars.
@@ -29,4 +30,4 @@ export function smoothWalkRoute(route,camp,visit){
 
 // Connect the actual actor origin to the navigation grid without a teleport.
 export function walkEntryClear(start,end,visit){const layout=normalizeLayout(visit.layout),keys=Object.keys(radii).filter(k=>visit.actions?.[k]),previous=keys.map(k=>Math.hypot(start.x-layout[k].x,start.z-layout[k].z)),escaping=previous.map((d,i)=>d<=radii[keys[i]]+.45),steps=Math.max(1,Math.ceil(Math.hypot(end.x-start.x,end.z-start.z)/.12));for(let n=1;n<=steps;n++){const p={x:start.x+(end.x-start.x)*n/steps,z:start.z+(end.z-start.z)*n/steps};if(Math.hypot(p.x,p.z)>17)return false;for(let i=0;i<keys.length;i++){const k=keys[i],d=Math.hypot(p.x-layout[k].x,p.z-layout[k].z),limit=radii[k]+.45;if(d<=limit){if(!escaping[i]||d<previous[i]-.00001)return false;}else escaping[i]=false;previous[i]=d;}}return true;}
-export function sampleWalkFollower(route,elapsed,offset,start,speed=3.5){const p=sampleWalkRoute(route,elapsed,offset,speed),u=Math.max(0,Math.min(1,elapsed/1.1)),blend=u*u*(3-2*u);return {...p,x:start.x+(p.x-start.x)*blend,z:start.z+(p.z-start.z)*blend};}
+export function sampleWalkFollower(route,elapsed,offset,start,speed=WALK_SPEED){return sampleWalkRoute([start,...route],elapsed,offset,speed);}
