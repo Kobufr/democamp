@@ -56,7 +56,12 @@ export function createDetailedGoods(goods={},snapshot={}){
  return g;
 }
 
+export function createUtilityGear(item){const g=new THREE.Group();g.name='single-gear-'+item.category;g.userData.gearCategory=item.category;const {add,rod}=builder(g),color=palette[item.color]||(item.category==='table'?0xbd9569:0x68746f);
+ if(item.category==='firepit'){if(item.model==='bowl'){const bowl=add(new THREE.SphereGeometry(.6,20,10,0,Math.PI*2,Math.PI/2,Math.PI/2),color,0,.5,0,true);bowl.scale.y=.45;}else{const tray=add(new THREE.BoxGeometry(1.05,.06,.85),color,0,.37,0,true);for(const x of [-.51,.51])add(new THREE.BoxGeometry(.04,.18,.85),color,x,.45,0,true);for(const z of [-.41,.41])add(new THREE.BoxGeometry(1.05,.18,.04),color,0,.45,z,true);if(item.model==='mesh')for(let i=0;i<9;i++)rod([-.5,.42,-.4+i*.1],[.5,.42,-.4+i*.1],.012,0xb8c0b7,true);}for(const x of [-.38,.38])for(const z of [-.3,.3])rod([x,.06,z],[x*.8,.4,z*.8],.028,0x77817a,true);}
+ else{const h=item.model==='low'?.42:.7;if(item.model==='slat'){for(let i=0;i<9;i++)add(new THREE.BoxGeometry(.14,.06,1),color,-.64+i*.16,h,0,true);}else add(new THREE.BoxGeometry(1.5,.08,1),color,0,h,0);for(const x of [-.6,.6])for(const z of [-.36,.36])rod([x,.03,z],[x,h-.04,z],.035,item.model==='slat'?0x7c8983:0x8d7254,true);rod([-.6,.18,-.36],[.6,.18,.36],.025,0x79857d,true);}
+ g.traverse(o=>{o.userData.gearCategory=item.category;});return g;}
 export function createSingleGearGoods(item){
+ if(['firepit','table'].includes(item.category))return createUtilityGear(item);
  const full=createDetailedGoods({chair:'folding',lantern:'classic',cooler:'compact',[item.category]:item.model},{[item.category]:item});
  for(const part of [...full.children])if(part.userData.gearCategory!==item.category){full.remove(part);part.geometry?.dispose();}
  const retained=new Set(full.children.map(part=>part.material));

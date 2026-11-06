@@ -1,7 +1,7 @@
 // Product names and source URLs verified against manufacturer pages, 2026-11-05.
 // Models are independently authored approximations, not official product models.
-export const GEAR_CATEGORIES={car:'車',tent:'テント',tarp:'タープ',lantern:'ランタン',chair:'チェア',cooler:'クーラーボックス'};
-export const GEAR_SHAPES={car:{suv:'SUV',compact:'コンパクト',minivan:'バン',camper:'キャンピングカー'},tent:{dome:'ドーム',pole:'ワンポール',ridge:'リッジ',cottage:'ロッジ'},tarp:{ridge:'レクタ',hex:'ヘキサ',wing:'ウイング'},lantern:{classic:'クラシック',led:'LED'},chair:{folding:'軽量チェア',wood:'ウッドチェア'},cooler:{compact:'コンパクト',large:'大型'}};
+export const GEAR_CATEGORIES={car:'車',tent:'テント',tarp:'タープ',lantern:'ランタン',chair:'チェア',cooler:'クーラーボックス',firepit:'焚火台',table:'テーブル'};
+export const GEAR_SHAPES={car:{suv:'SUV',compact:'コンパクト',minivan:'バン',camper:'キャンピングカー'},tent:{dome:'ドーム',pole:'ワンポール',ridge:'リッジ',cottage:'ロッジ'},tarp:{ridge:'レクタ',hex:'ヘキサ',wing:'ウイング'},lantern:{classic:'クラシック',led:'LED'},chair:{folding:'軽量チェア',wood:'ウッドチェア'},cooler:{compact:'コンパクト',large:'大型'},firepit:{bowl:'ボウル型',square:'四角型',mesh:'メッシュ型'},table:{wood:'ウッドテーブル',slat:'アルミテーブル',low:'ローテーブル'}};
 export const GEAR_COLORS={original:'定番カラー',sand:'サンド',olive:'オリーブ',navy:'ネイビー',red:'レッド',cream:'アイボリー',sky:'ブルー'};
 export const GEAR_CATALOG=[
  {id:'suzuki-jimny-sierra',category:'car',brand:'SUZUKI',name:'ジムニー シエラ',model:'suv',color:'olive',design:'jimny',url:'https://www.suzuki.co.jp/car/jimny_sierra/',note:'角張ったボディ・丸形ライト・背面スペアタイヤを表現。'},
@@ -23,12 +23,12 @@ export const GEAR_CATALOG=[
  {"id": "yeti-tundra45", "category": "cooler", "brand": "YETI", "name": "Tundra 45", "model": "large", "color": "cream", "design": "tundra", "url": "https://www.yeti.com/coolers/hard-coolers/tundra/tundra-45.html", "note": "厚みのある角形ボディ、2つのラバーラッチとロープハンドルを表現。"},
  {"id": "snowpeak-soft18", "category": "cooler", "brand": "snow peak", "name": "ソフトクーラー18", "model": "compact", "color": "sand", "design": "soft-cooler", "url": "https://www.snowpeak.com/collections/under-100/products/soft-cooler-18-fp-118", "note": "布製のバッグ形状、ファスナーとショルダーストラップを表現。"},
 ];
-export const BASIC_GEAR=Object.entries(GEAR_CATEGORIES).map(([category,name])=>({id:'basic-'+category,category,name,brand:'こもれびキャンプ',model:({car:'suv',tent:'dome',tarp:'ridge',lantern:'classic',chair:'folding',cooler:'compact'})[category],color:category==='car'?'olive':'original',design:'',source:'basic',url:'',note:'自由に楽しめる架空の基本装備です。'}));
+export const BASIC_GEAR=Object.entries(GEAR_CATEGORIES).map(([category,name])=>({id:'basic-'+category,category,name,brand:'こもれびキャンプ',model:({car:'suv',tent:'dome',tarp:'ridge',lantern:'classic',chair:'folding',cooler:'compact',firepit:'bowl',table:'wood'})[category],color:category==='car'?'olive':'original',design:'',source:'basic',url:'',note:'自由に楽しめる架空の基本装備です。'}));
 const text=(v,n)=>typeof v==='string'?v.trim().slice(0,n):'';
 export function safeGearURL(value){try{const u=new URL(value);return u.protocol==='https:'&&!u.username&&!u.password?u.href:'';}catch{return '';}}
 export function normalizeGearCollection(value={}){
  const items=[],seen=new Set();let added=0;
- for(const raw of (Array.isArray(value?.items)?value.items:[]).slice(0,46)){
+ for(const raw of (Array.isArray(value?.items)?value.items:[]).slice(0,48)){
   if(!raw||typeof raw!=='object')continue;
   const basic=BASIC_GEAR.find(p=>p.id===raw.id),known=basic||GEAR_CATALOG.find(p=>p.id===raw.id);
   if(known){if(!seen.has(known.id)&&(basic||added<40)){items.push(basic?{...basic,model:Object.hasOwn(GEAR_SHAPES[basic.category],raw.model)?raw.model:basic.model,color:Object.hasOwn(GEAR_COLORS,raw.color)?raw.color:basic.color}:{...known,source:'catalog'});seen.add(known.id);if(!basic)added++;}continue;}

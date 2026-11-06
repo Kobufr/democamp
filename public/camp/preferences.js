@@ -11,7 +11,7 @@ export const OUTFIT_STYLES={auto:'キャラクターにまかせる',outdoor:'�
 export const HAT_STYLES={auto:'キャラクターにまかせる',cap:'キャップ',none:'帽子なし'};
 export function normalizeOutfit(value={}){return {style:Object.hasOwn(OUTFIT_STYLES,value?.style)?value.style:'auto',color:Object.hasOwn(CLOTHING_COLORS,value?.color)?value.color:'original',hat:Object.hasOwn(HAT_STYLES,value?.hat)?value.hat:'auto'};}
 export const TARP_TYPES={ridge:'レクタタープ',hex:'ヘキサタープ',wing:'ウイングタープ'};
-export const GOODS_OPTIONS={chair:{name:'チェア',choices:{folding:'フォールディングチェア',wood:'ウッドチェア'}},lantern:{name:'ランタン',choices:{classic:'クラシックランタン',led:'LEDランタン'}},cooler:{name:'クーラーボックス',choices:{compact:'コンパクト',large:'ファミリーサイズ'}}};
+export const GOODS_OPTIONS={chair:{name:'チェア',choices:{folding:'フォールディングチェア',wood:'ウッドチェア'}},lantern:{name:'ランタン',choices:{classic:'クラシックランタン',led:'LEDランタン'}},cooler:{name:'クーラーボックス',choices:{compact:'コンパクト',large:'ファミリーサイズ'}},firepit:{name:'焚火台',choices:{bowl:'ボウル型',square:'四角型',mesh:'メッシュ型'}},table:{name:'テーブル',choices:{wood:'ウッドテーブル',slat:'アルミテーブル',low:'ローテーブル'}}};
 export function normalizeGoods(value={}){return Object.fromEntries(Object.entries(GOODS_OPTIONS).map(([key,v])=>[key,Object.hasOwn(v.choices,value?.[key])?value[key]:Object.keys(v.choices)[0]]));}
 export const TENT_TYPES=['dome','pole','ridge','cottage'];
 export const COMPANION_RELATIONS=['家族','パートナー','子ども','友人'];
