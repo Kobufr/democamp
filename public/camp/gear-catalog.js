@@ -43,7 +43,7 @@ export function normalizeGearCollection(value={}){
  return {items,equipped,colors};
 }
 export function gearFor(profile,category){const c=normalizeGearCollection(profile?.gearCollection);return c.items.find(p=>p.id===c.equipped[category])||null;}
-export function addGear(collection,item){const c=normalizeGearCollection(collection);if(c.items.some(p=>p.id===item.id))return c;if(c.items.filter(p=>p.source!=='basic').length>=40)throw Error('追加の商品は40点まで登録できます。');return normalizeGearCollection({...c,items:[...c.items,item]});}
+export function addGear(collection,item){const c=normalizeGearCollection(collection);if(c.items.some(p=>p.id===item.id))return c;if(c.items.filter(p=>p.category===item.category).length>=4)throw Error('各カテゴリの持ち物は4点までです。');if(c.items.filter(p=>p.source!=='basic').length>=40)throw Error('追加の商品は40点まで登録できます。');return normalizeGearCollection({...c,items:[...c.items,item]});}
 export function removeGear(collection,id){const c=normalizeGearCollection(collection);return normalizeGearCollection({...c,items:c.items.filter(item=>item.id!==id)});}
 export function equipGear(profile,id){const c=normalizeGearCollection(profile.gearCollection),item=c.items.find(p=>p.id===id);if(!item)throw Error('持ち物に追加してから選んでください。');const next={...profile,gearCollection:{...c,colors:{...c.colors,[item.category]:'original'},equipped:{...c.equipped,[item.category]:id}}};
  const key={car:'preferredCar',tent:'preferredTent',tarp:'preferredTarp'}[item.category];
